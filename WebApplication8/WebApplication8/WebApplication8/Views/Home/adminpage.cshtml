@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "adminpage";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet">
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+        padding-top: 1px;
+    }
+
+    .login-container {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        width: 300px;
+    }
+
+        .login-container h2 {
+            margin-top: 0;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+            .login-container button[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+    .error {
+        color: red;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    body {
+        background-image: url('pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+</style>
+<body>
+    <center>
+        <a>
+            <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px" />
+        </a>
+    </center>
+    <center>
+        <div class="container">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="ADMIN" placeholder="ID" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Submit</button>
+                    <p id="errorText" class="error"></p>
+                </form>
+            </div>
+        </div>
+        <script src="valid.js"></script>
+    </center>
+</body>
+</html>
+
