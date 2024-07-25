@@ -77,6 +77,7 @@ C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplicat
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -156,3 +157,5 @@ F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.csproj.CoreCompileI
 F:\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda

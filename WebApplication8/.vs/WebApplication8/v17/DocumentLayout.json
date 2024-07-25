@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "F:\\WebApplication8\\",
   "Documents": [
     {
@@ -21,6 +22,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\savepage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\savepage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\ccloves.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\ccloves.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\spices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\spices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\stock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\stock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\savepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\savepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -43,10 +72,26 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-25T10:43:37.761Z",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "WebApplication8\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T13:19:48.948Z",
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "ddryfruitsandspices.cshtml",
               "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
@@ -56,11 +101,36 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-25T10:12:13.945Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "savepage2.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "ViewState": "AQIAAEgAAAAAZmZmZmYkwPUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:08:37.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ccloves.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "ViewState": "AQIAAGoAAAAAMzMzMzMrwHMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:07:59.825Z",
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< HEAD
               "Title": "Stock.cs",
               "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Controllers\\Stock.cs",
               "RelativeDocumentMoniker": "WebApplication8\\Controllers\\Stock.cs",
@@ -81,10 +151,35 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T05:23:22.647Z"
+=======
+              "Title": "spices.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\spices.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\spices.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\spices.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\spices.cshtml",
+              "ViewState": "AQIAALcAAAAAAAAAAAAwwMYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:07:17.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SAVEPAGE.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAwwPEAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:01:44.056Z",
+              "EditorCaption": ""
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+<<<<<<< HEAD
               "Title": "CombinedViewModel.cs",
               "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\CombinedViewModel.cs",
               "RelativeDocumentMoniker": "WebApplication8\\Models\\CombinedViewModel.cs",
@@ -93,6 +188,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T05:22:18.408Z"
+=======
+              "Title": "stock.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\stock.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\stock.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\stock.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\stock.cshtml",
+              "ViewState": "AQIAAJkBAAAAAAAAAAAhwKkBAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:55:15.836Z",
+              "EditorCaption": ""
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
             }
           ]
         }

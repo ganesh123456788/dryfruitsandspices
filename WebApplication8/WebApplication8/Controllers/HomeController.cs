@@ -28,6 +28,7 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
         public ActionResult Combinedpage()
         {
             return View();
@@ -320,6 +321,8 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
         public ActionResult stock()
         {
             return View();
