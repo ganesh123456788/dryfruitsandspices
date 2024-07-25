@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\home\\ddryfruitsandspices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\ddryfruitsandspices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\spicesedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\spicesedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\controllers\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T10:43:37.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ddryfruitsandspices.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T10:12:13.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Controllers\\Stock.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\Stock.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Controllers\\Stock.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\Stock.cs",
+              "ViewState": "AQIAAEAAAAAANDMzMzMDwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:25:45.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chocolate.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\Chocolate.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\Chocolate.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\Chocolate.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\Chocolate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:23:22.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CombinedViewModel.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\CombinedViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\CombinedViewModel.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\CombinedViewModel.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\CombinedViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:22:18.408Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
