@@ -120,7 +120,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\AccountController.cs" />
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
     <Compile Include="Controllers\ChocolateEditController.cs" />
     <Compile Include="Controllers\DryFruitEditController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -132,9 +136,19 @@
     <Compile Include="Models\Chocolate.cs" />
     <Compile Include="Models\CombinedViewModel.cs" />
     <Compile Include="Models\DryFruits.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\Spices.cs" />
     <Compile Include="Models\User.cs" />
+=======
+    <Compile Include="Models\Spices.cs" />
+=======
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +256,10 @@
     <Content Include="Views\Home\chazelnutmilkchocolate.cshtml" />
     <Content Include="Views\Home\ccoconutchocolate.cshtml" />
     <Content Include="Views\Home\cdateschocolate.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
     <Content Include="Views\Home\Combinedpage.cshtml" />
     <Content Include="Views\Home\cashews.cshtml" />
     <Content Include="Views\Home\almonds.cshtml" />
@@ -328,11 +346,23 @@
     <Content Include="Views\ChocolateEdit\Edit.cshtml" />
     <Content Include="Views\ChocolateEdit\Delete.cshtml" />
     <Content Include="Views\Stock\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
