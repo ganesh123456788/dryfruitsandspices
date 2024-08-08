@@ -1,0 +1,505 @@
+﻿
+@{
+    ViewBag.Title = "Combinedpage";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="profile"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="ddryfruitsandspices"> <button onclick="myFunction()">HOME</button></a>
+            <a href="settings"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="adminpage"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    .card container {
+        width: 100%;
+        padding: 5%;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        padding: 1px;
+        gap: 10%;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .stock2 {
+        position: absolute;
+        margin-left: 250px;
+        height: 35px;
+        width: 60px;
+        font-size: 14px;
+        top: 70px;
+        display: inline-block;
+    }
+
+    .stock {
+        position: absolute;
+        margin-left: 120px;
+        height: 35px;
+        width: 90px;
+        font-size: 14px;
+        top: 70px;
+        display: inline-block;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+</style>
+<body>
+    <center>
+        <a>
+            <a href="combinedpage">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px" />
+            </a>
+    </center>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="cashews">
+                    <img src="/Content/OIP.jpg" height="200px" width="200px"><a>
+                        <h3>CASHEWS</h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+            <div class="grid-item">
+                <a href="almonds">
+                    <img src="/Content/Almond-Nut-Download-PNG-Image.png" height="200px" width="200px"><a>
+                        <h3>ALMONDS</h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+            <div class="grid-item">
+                <a href="DRIEDPLUMS">
+                    <img src="/Content/DRIED PLUMS.jpg" height="200px" width="200px"><a>
+                        <h3>DRIED PLUMS</h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="DRIEDANJEER">
+                    <img src="/Content/6225f4149136a.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <br> ANGEER
+                        </h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="DRIEDSTRAWBERRIES">
+                    <img src="/Content/dried-strawberries-white-background-with-place-text-preparations-pleasant-healthy-tea-party_287732-667.JPG" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <br>STRAWBERRIES
+                        </h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="APRICOT">
+                    <img src="/Content/apricot.jpg" height="200px" width="200px"><a>
+                        <h3>APRICOT</h3>
+                        <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="DRIEDKIWI">
+                    <img src="/Content/dried-kiwi.jpg" height="200px" width="200px"><a>
+                        <h3>DRIED KIWI</h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="DRIEDAMLA">
+                    <img src="/Content/AMLA DRIED.jpg" height="200px" width="200px"><a>
+                        <h3>DRIED AMLA</h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="DRIEDCHERRY">
+                    <img src="/Content/Dried-cherry-1.png" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <br> CHERRY
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="DRIEDBLUEBERRIES">
+                    <img src="/Content/dried blueberries-700x700.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <br> BLUEBERRIES
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="SALTEDCASHEWS">
+                    <img src="/Content/SALTED CASHEWS.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            SALTED
+                            <br> CASHEWS
+                        </h3>
+                    </a>
+                    <h2 style="text-align: center;">Price:Rs.199/-</h2>
+            </div>
+
+            <div class="grid-item">
+                <a href="DRIEDCRANBERRIES">
+                    <img src="/Content/DRIED CRANBERRIES.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <br>CRANBERRIES
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="PISTACHIOS">
+                    <img src="/Content/PISTAS.jpg" height="200px" width="200px"><a>
+                        <h3>PISTACHIOS</h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="DRIEDBLACKBERRY">
+                    <img src="/Content/BLACKBERRY.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <BR>BLACKBERRY
+                        </h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="raisins">
+                    <img src="/Content/th.jpg" height="200px" width="200px"><a>
+                        <h3>RAISINS</h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="dates">
+                    <img src="/Content/dates-hd-png-semi-dry-dates-900.jpg" height="200px" width="200px"><a>
+                        <h3>DATES</h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="DRIEDORANGES">
+                    <img src="/Content/NaturalDriedOrangeSlicesPremiumQuality2.jpg" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            <BR>ORANGES
+                        </h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="DRIEDMANGOSLICE">
+                    <img src="/Content/NaturalDriedMangoSlicePremiumQualityHealthySnacks.JPG" height="200px" width="200px"><a>
+                        <h3>
+                            DRIED
+                            MANGO
+                        </h3>
+                    </a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="turmericpowder">
+                    <img src="/Content/turmeric-powder-extract-curcumin-95-hplc-1000x1000.jpg" height="200px" width="200px">
+                    <a>
+                        <h4>
+                            TURMERIC
+                            <BR>POWDER
+                        </h4>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="elachi">
+                    <img src="/Content/51mBsFX3OzL._SX300_SY300_QL70_FMwebp_.JPG" height="200px" width="200px"><a><h4>ELACHI</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="BLACKPEPPER">
+                    <img src="/Content/BLACKPEPPER.JPG" height="200px" width="200px">
+                    <a>
+                        <h4>
+                            BLACK
+                            <BR>PEPPER
+                        </h4>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="mustardseeds">
+                    <img src="/Content/mustardseeds_560x560.JPG" height="200px" width="200px"> <a>
+                        <h4>
+                            MUSTARD
+                            <BR>SEEDS
+                        </h4>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="cloves">
+                    <img src="/Content/Cloves.PNG" height="200px" width="200px"> <a><h4>CLOVES</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="CINNAMON">
+                    <img src="/Content/CINNAMON.jpg" height="200px" width="200px"><a><h4>CINNAMON</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="CORIANDER">
+                    <img src="/Content/CORIANDER POWDER.jpg" height="200px" width="200px"> <a><h4>CORIANDER</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="CUMINSEEDS">
+                    <img src="/Content/CUMIN SEEDS 2.jpg" height="200px" width="200px"> <a><h4>CUMIN SEEDS</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="SAFFRON">
+                    <img src="/Content/SAFFRON.jpg" height="200px" width="200px"> <a><h4>SAFFRON</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="BAYLEAF">
+                    <img src="/Content/BAY LEAF.jpg" height="200px" width="200px"> <a><h4>BAY LEAF</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="YELLOWMUSTARD">
+                    <img src="/Content/YELLOW MUSTARD.JPG" height="200px" width="200px"> <a>
+                        <h4>
+                            YELLOW
+                            <BR>MUSTARD
+                        </h4>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="NUTMEG">
+                    <img src="/Content/NUTMEG.jpg" height="200px" width="200px"> <a><h4>NUTMEG</h4></a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="MACE">
+                    <img src="/Content/MACE.jpg" height="200px" width="200px"> <a><h4>MACE</h4></a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="STARANICE">
+                    <img src="/Content/Star-Anise.jpg" height="200px" width="200px"> <a><h4>STAR ANICE</h4></a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="CHLLI">
+                    <img src="/Content/CHILLI.jpg" height="200px" width="200px"> <a><h4>CHILLI POWDER</h4></a>
+                </a>
+                <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="CHOCOLATEWITHALMOND">
+                    <img src="/Content/ALMOND CHOCOLATE.JPG" height="200px" width="200px"> <a>
+                        <h3>
+                            CHOCOLATE
+                            <BR> WITH ALMOND
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+
+            <div class="grid-item">
+                <a href="HAZELNUTCHOCOLATE">
+                    <img src="/Content/HAZELNUT  CHOCOLATE.JPG" height="200px" width="200px"><a>
+                        <h3>
+                            HAZELNUT MILK
+                            <BR> CHOCOLATE
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+            <div class="grid-item">
+                <a href="COCONUTCHOCOLATE">
+                    <img src="/Content/coconut1-200x200.jpg" height="200px" width="200px"> <a>
+                        <h3>
+                            COCONUT
+                            <BR>CHOCOLATE
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="DATESCHOCOLATE">
+                    <img src="/Content/DATES CHOCOLATES.jpg" height="200px" width="200px"> <a>
+                        <h3>
+                            DATES
+                            <BR> CHOCOLATES
+                        </h3>
+                    </a>
+                    <h3 style="text-align: center;">Price:Rs.199/-</h3>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
