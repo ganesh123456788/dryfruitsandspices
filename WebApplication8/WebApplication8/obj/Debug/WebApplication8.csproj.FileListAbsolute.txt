@@ -77,6 +77,13 @@ C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplicat
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -156,6 +163,7 @@ F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.csproj.CoreCompileI
 F:\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -255,3 +263,10 @@ F:\WebApplication8\WebApplication8\bin\System.Buffers.xml
 F:\WebApplication8\WebApplication8\bin\System.Memory.xml
 F:\WebApplication8\WebApplication8\bin\System.Numerics.Vectors.xml
 F:\WebApplication8\WebApplication8\bin\System.Runtime.CompilerServices.Unsafe.xml
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1

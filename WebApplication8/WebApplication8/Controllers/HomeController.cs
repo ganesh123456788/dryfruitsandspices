@@ -28,6 +28,13 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
         public ActionResult Combinedpage()
         {
             return View();
@@ -320,6 +327,14 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
         public ActionResult stock()
         {
             return View();
