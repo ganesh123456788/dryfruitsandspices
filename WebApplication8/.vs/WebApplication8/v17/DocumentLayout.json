@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GIT Push\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\webapplication8\\webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\WebApplication8\\webapplication8\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\webapplication8\\webapplication8\\views\\login\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\login\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication8\\Web.config",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeToolTip": "WebApplication8\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-14T00:17:21.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAcwGIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T23:12:35.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\LoginController.cs",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwF4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T22:59:17.838Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
