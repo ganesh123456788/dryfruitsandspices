@@ -1,0 +1,152 @@
+﻿@model IEnumerable<WebApplication8.Controllers.CombinedController.ProductDetailViewModel>
+@{
+    ViewBag.Title = "Combined Spices";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combined Spices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-image: url('/Content/pexels-photo-1939485.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .header-icons {
+            position: relative;
+            float: right;
+            margin-top: 70px;
+            margin-right: 20px; /* Adjust as needed for overall spacing */
+        }
+
+        .fa-cart-shopping {
+            position: relative;
+            font-size: 30px;
+            margin-right: 100px; /* Increased space between cart and profile icon */
+            display: inline-block; /* Ensure it aligns properly */
+        }
+
+        .profile-icon {
+            position: absolute;
+            font-size: 30px;
+            top: 0; /* Align with cart icon */
+            right: 0; /* Align to the right edge */
+            margin-right: 0; /* Ensure correct positioning */
+            cursor: pointer;
+        }
+
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px 20px;
+            width: 60%;
+            border: 1px solid #070202;
+            top: 40px; /* Adjust to appear below the profile icon */
+            right: 0;
+        }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+        .profile-dropdown button {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3%;
+            justify-items: center;
+            align-items: center;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        .small-image {
+            width: 150px; /* Adjust as necessary */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-icons">
+            <a href="@Url.Action("Index", "ShoppingCart")" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping">
+                    <span class="badge">
+                        @if (Session["Cart"] != null)
+                        {
+                            var cart = (List<ShoppingCartApp.Controllers.ShoppingCartController.CartItem>)Session["Cart"];
+                            @cart.Sum(i => i.Quantity)
+                        }
+                        else
+                        {
+                            @:0
+                        }
+                    </span>
+                </i>
+            </a>
+            <div class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+                <div class="profile-dropdown">
+                    <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+                    <a href="@Url.Action("Index")"> <button onclick="myFunction()">HOME</button></a>
+                    <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+                    <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <center>
+        <a href="@Url.Action("Index")">
+            <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px" alt="Banner Image">
+        </a>
+    </center>
+
+    <div class="grid-container">
+        @foreach (var item in Model)
+        {
+            <div class="grid-item">
+                <img src="@Url.Content(item.ImagePath)" alt="@item.ImageName"
+                     style="width:100px; height:100px; cursor:pointer;"
+                     onclick="window.location.href='@Url.Action("GetProductDetails", "ProductDetails", new { imageName = item.ImageName, productType = item.ProductType })'" />
+                <h3>@item.ImageName</h3>
+                <h3 style="text-align: center;">Price: @item.Price /-</h3>
+                <h3>Short Description : @item.ShortStory</h3>
+            </div>
+        }
+    </div>
+
+</body>
+</html>

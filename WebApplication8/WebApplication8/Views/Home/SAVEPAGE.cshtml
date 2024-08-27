@@ -1,0 +1,497 @@
+﻿
+@{
+    ViewBag.Title = "SAVEPAGE";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <div class="SWITCH"></div>
+    <a href="adddryfruits">
+        <button class="add-button">ADD</button>
+    </a>
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="profile"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="ddryfruitsandspices"> <button onclick="myFunction()">HOME</button></a>
+            <a href="settings"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="adminpage"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 2px solid black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: CENTER;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .fa-cart-shopping {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .add-button {
+        float: right;
+        position: absolute;
+        right: 280px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        width: 38px;
+        font-size: 14px;
+        top: 70px;
+        padding: 1PX;
+        background-color: white;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+        .button-container a {
+            margin-right: 10px;
+        }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+</style>
+<body>
+    <center>
+        <a>
+            <a href="ddryfruitsandspices">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+    </center>
+    <CENTER>
+        <h2>DRY FRUITS</h2>
+        <table>
+            <tr>
+                <th>ITEM NAME</th>
+                <th>IMAGE</th>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><h3>CASHEWS</h3></td>
+                <td><img src="/Content/OIP.jpg" height="200px" width="250px"></td>
+                <td>
+                    <br>Reduced cholesterol</br>
+                    <br>Cashews have a bad reputation for containing saturated fat.</br>
+                    <br>Heart disease prevention</br>
+                    <br>Not only can they lower bad cholesterol, cashews may help prevent heart disease due to their high magnesium content</br>
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+            </tr>
+            <tr>
+                <td><h3>ALMONDS</h3></td>
+                <td><img src="/Content/Almond-Nut-Download-PNG-Image.png" height="200px" width="250px"></td>
+                <td>
+                    <BR>Reduced cholesterol.</br>
+                    <br>Almonds deliver a massive amount of nutrients.</br>
+                    <br>Almonds are loaded with antioxidants</br>
+                    <br> Almonds are high in vitamin E</br>
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED PLUMS</h3></td>
+                <td><img src="/Content/DRIED PLUMS.jpg" height="200px" width="250px"></td>
+                <td>
+                    <br>Prunes and Prune Juice May Relieve Constipation</br>
+                    <br>Plums and Prunes Are Rich in Antioxidants</br>
+                    <br>They May Help Lower Your Blood Sugar</br>
+                    <br> Prunes May Promote Bone Health</br>
+                </td>
+                <td>Rs.200</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>ANGEER</h3></td>
+                <td><img src="/Content/6225f4149136a.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Figs Control blood pressure and aging  </br>
+                    <br> Figs Help in weight management:  </br>
+                    <br>Figs Reduces chances of cancer: </br>
+                    <br> Anjeer keeps the reproductive system in checK </br>
+                </td>
+                <td>Rs.360</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED STRAWBERRIES</h3></td>
+                <td><img src="/Content/dried-strawberries-white-background-with-place-text-preparations-pleasant-healthy-tea-party_287732-667.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>Healthy Alternative to Candy.</br>
+                    <br> Tasty Source of Minerals. </br>
+                    <be>
+                        Prevent Wrinkles.</br>
+                        <br>Lower Bad Cholesterol.
+                </td>
+                <td>Rs.499</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED APRICOT</h3></td>
+                <td><img src="/Content/apricot.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>May protect your liver </br>
+                    <br> May boost skin health </br>
+                    <br> High in antioxidants </br>
+                    <br> Very nutritious and low in calories
+                </td>
+                <td>Rs.600</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED KIWI</h3></td>
+                <td><img src="/Content/dried-kiwi.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Preventing Hair Loss</br>
+                    <br>  kiwis contain high levels of serotonin and antioxidants. </br>
+                    <br> Consuming fewer calories is the biblical phrase for losing weight</br>
+                    <br> Antioxidants, like vitamins C and E, are beneficial for preventing hair loss.
+                </td>
+                <td>Rs.250</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED AMLA</h3></td>
+                <td><img src="/Content/AMLA DRIED.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Amla is considered very beneficial for hair and skin.  </br>
+                    <br> Helps Fight Against the Common Cold </br>
+                    <br> Amla & its Positive Effects on Cancer </br>
+                    <br>Excellent Anti-inflammatory Properties
+                </td>
+                <td>Rs.250</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED CHERRY</h3></td>
+                <td><img src="/Content/Dried-cherry-1.png" height="200px" width="250px"></td>
+                <td>
+                    <BR>Dried Cherries Include Antioxidants</br>
+                    <br> Dried Cherries Encourage Healthy Cardiovascular Function </br>
+                    <br> Promote Healthy Joint Function</br>
+                    <br> The melatonin found in cherries encourages healthy sleep patterns
+                </td>
+                <td>Rs.310</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED BLUEBERRIES</h3></td>
+                <td><img src="/Content/dried blueberries-700x700.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Blueberries are low in calories but high in nutrients<br>
+                    <br> Blueberries are one of the top antioxidant foods<br>
+                    <br> Blueberries reduce DNA damage, which may help protect against aging and cancer.<br>
+                    <br> Blueberries protect cholesterol in your blood from becoming damaged
+                </td>
+                <td>Rs.400</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>SALTED CASHEWS</h3></td>
+                <td><img src="/Content/SALTED CASHEWS.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Salted Cashews are rich in protein, with approximately 5 grams per serving.  </br>
+                    <br> Cashews have had a bad reputation for containing saturated fat.  </br>
+                    <br>  Salted cashews can be part of a heart-healthy diet in moderation. </br>
+                    <br>Salted cashews can have about 1.8 mg of iron, about 10 per cent of your daily recommended value.
+                </td>
+                <td>Rs.250</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED CRANBERRIES</h3></td>
+                <td><img src="/Content/DRIED CRANBERRIES.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Eradicates Dandruff Woes </br>
+                    <br> Combats Urinary Tract Infection (UTI)  </br>
+                    <br> Consuming a few dried cranberries will provide ample vitamin C for the daily diet. </br>
+                    <br> Dried cranberry is bestowed with the key mineral for optimal muscle function – magnesium
+                </td>
+                <td>Rs.280</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>PISTACHIOS</h3></td>
+                <td><img src="/Content/PISTAS.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Low in calories yet high in protein  </br>
+                    <br>May promote blood vessel health </br>
+                    <br> Promote healthy gut bacteria </br>
+                    <br>  May lower cholesterol and blood pressure
+                </td>
+                <td>Rs.350</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED BLACKBERRIES</h3></td>
+                <td><img src="/Content/BLACKBERRY.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>For such a tiny berry, blackberries are high in fiber.</br>
+                    <br> It also helps your body metabolize carbs, amino acids, and cholesterol.</br>
+                    <br> reduce free radicals (molecules released by toxins) in the body</br>
+                    <br> The review concluded that antioxidants in berry fruits help fight free radicals and alter how brain neurons communicate
+                </td>
+                <td>Rs.375</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>RAISINS</h3></td>
+                <td><img src="/Content/th.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Rich in Nutrients.  </br>
+                    <br>Helps Maintain Healthy Blood Sugar Levels. </br>
+                    <br>Aid in Weight Management.  </br>
+                    <br>Support Heart Health.
+                </td>
+                <td>Rs.150</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DATES</h3></td>
+                <td><img src="/Content/dates-hd-png-semi-dry-dates-900.jpg" height="200px" width="250px"></td>
+                <td>
+                    <br>Dates are highly rich in soluble fiber, which promotes regular bowel movements and healthy digestion.</br>
+                    <br>The antioxidants in dates protect neural cells from oxidative damage.</br>
+                    <br> Fructose in dates does not require insulin to be metabolised.</br>
+                </td>
+                <td>Rs.374</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED ORANGES</h3></td>
+                <td><img src="/Content/NaturalDriedOrangeSlicesPremiumQuality2.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>You can use dried oranges for a proper lean diet</BR>
+                    <br> Decoction of dried orange leaves is useful for washing swelling and relieving pain. </BR>
+                    <br>Oranges and thin sheets between oranges are best medicine for lowering blood.</BR>
+                    <br> It is a blood thinner and therefore the best way to eliminate facial pimples.
+                </td>
+                <td>Rs.650</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DRIED MANGO</h3></td>
+                <td><img src="/Content/NaturalDriedMangoSlicePremiumQualityHealthySnacks.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>Support digestion and gut health</br>
+                    <br>Immune and enrgy booster</br>
+                    <br> Lower bad cholestrol and blood pressure</br>
+                    <br>Dried fruits are still a rich source of important vitamins, minerals and fibre,so they can still be consumed in moderation.
+                </td>
+                <td>Rs.860</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </CENTER>
+
+

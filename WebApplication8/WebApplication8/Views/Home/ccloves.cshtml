@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "ccloves";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    .card container {
+        width: 25%;
+        padding: 5%;
+        margin-left: 200px;
+        margin-right: 200px;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .text {
+        border: 2px solid black;
+        margin-left: 1%;
+        border-width: 5px;
+        border-radius: 10px;
+        max-width: fit-content;
+        text-align: align center;
+        margin-top: 1%;
+    }
+
+    .text1 {
+        margin-left: 0px;
+        padding-bottom: 10px;
+        margin-right: 30%;
+        font-weight: 1000;
+        font-style: bold;
+        font-size: 30px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+ 
+</style>
+<body>
+    <center>
+        <a>
+            <a href="spices">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+    </center>
+    <center>
+        <div class="row">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1 class="text1">CLOVES</h1>
+                    <img src="/Content/Cloves.PNG" height="200px" width="200px">
+                    <div class="dropdown">
+                        <select id="dropdown-menu" style="height: 30px; width: 130px; font-size:medium;">
+                            <option value="option1">250gms</option>
+                            <option value="option2">500gms</option>
+                            <option value="option3">1kg</option>
+                            <option value="option3">2kgs</option>
+                            <option value="option3">3kgs</option>
+                            <option value="option3">4kgs</option>
+                            <option value="option3">5kgs</option>
+                        </select>
+                        <h1 style="text-align: center;">Price:Rs.312.74/-</h1>
+                        <p style="font-size: 24px" class="text">
+                            <b>BENEFITS:</b>
+                            <br>Clove oil is perhaps best known as a remedy for toothache and dental pain.
+                            <br>Cloves are best for people with high blood sugar levels.
+                            </br>Cloves are best used for easing flatulence, gastric irritability, dyspepsia, and nausea.
+                            </br>People with weak bones and osteoporosis are benefitted from taking cloves regularly.
+                        </p>
+                    </div>
+    </center>
+    </div>
+    </div>
+</body>
+</html>
