@@ -1,0 +1,265 @@
+﻿
+@{
+    ViewBag.Title = "spices";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dry Fruits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <a href="savepage2">
+        <i class="fa-solid fa-plus"></i>
+    </a>
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="profile"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="ddryfruitsandspices"> <button onclick="myFunction()">HOME</button></a>
+            <a href="settings"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="adminpage"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    .fa-cart-shopping {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .card container {
+        width: 100%;
+        padding: 5%;
+        margin-left: 200px;
+        .fa-cart-shopping
+
+    {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .card container {
+        width: 100%;
+        padding: 3%;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        padding: 1px;
+        gap: 15%;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    margin-right:200px;
+    }
+
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 5px;
+        gap: 10%;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+</style>
+<body>
+    <center>
+        <a>
+            <a href="ddryfruitsandspices">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+    </center>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="cturmericpowder">
+                    <img src="/Content/turmeric-powder-extract-curcumin-95-hplc-1000x1000.jpg" height="200px" width="200px"> <a>
+                        <h4>
+                            TURMERIC
+                            <BR>POWDER
+                        </h4>
+                    </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="celachi">
+                    <img src="/Content/51mBsFX3OzL._SX300_SY300_QL70_FMwebp_.JPG" height="200px" width="200px"><a><h4>ELACHI</h4></a>
+            </div>
+            <div class="grid-item">
+                <a href="cblackpepper">
+                    <img src="/Content/BLACKPEPPER.JPG" height="200px" width="200px"><a>
+                        <h4>
+                            BLACK
+                            <BR>PEPPER
+                        </h4>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="cmustardseeds">
+                    <img src="/Content/mustardseeds_560x560.JPG" height="200px" width="200px"> <a>
+                        <h4>
+                            MUSTARD
+                            <BR>SEEDS
+                        </h4>
+                    </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="ccloves">
+                    <img src="/Content/Cloves.PNG" height="200px" width="200px"> <a><h4>CLOVES</h4></a>
+            </div>
+            <div class="grid-item">
+                <a href="ccinnamon">
+                    <img src="/Content/CINNAMON.jpg" height="200px" width="200px"><a><h4>CINNAMON</h4></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="ccoriander">
+                    <img src="/Content/CORIANDER POWDER.jpg" height="200px" width="200px"> <a><h4>CORIANDER</h4></a>
+            </div>
+            <div class="grid-item">
+                <a href="ccuminseeds">
+                    <img src="/Content/CUMIN SEEDS 2.jpg" height="200px" width="200px"> <a><h4>CUMIN SEEDS</h4></a>
+            </div>
+            <div class="grid-item">
+                <a href="csaffron">
+                    <img src="/Content/SAFFRON.jpg" height="200px" width="200px"> <a><h4>SAFFRON</h4></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="cbayleaf">
+                    <img src="/Content/BAY LEAF.jpg" height="200px" width="200px"> <a><h4>BAY LEAF</h4></a>
+            </div>
+            <div class="grid-item">
+                <a href="cyellowmustard">
+                    <img src="/Content/YELLOW MUSTARD.JPG" height="200px" width="200px"> <a>
+                        <h4>
+                            YELLOW
+                            <BR>MUSTARD
+                        </h4>
+                    </a>
+            </div>
+            <div class="grid-item">
+                <a href="cnutmeg">
+                    <img src="/Content/NUTMEG.jpg" height="200px" width="200px"> <a><h4>NUTMEG</h4></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="cmace">
+                    <img src="/Content/MACE.jpg" height="200px" width="200px"> <a><h4>MACE</h4></a>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="cstaranice">
+                    <img src="/Content/Star-Anise.jpg" height="200px" width="200px"> <a><h4>STAR ANICE</h4></a>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="cchillipowder">
+                    <img src="/Content/CHILLI.jpg" height="200px" width="200px"> <a><h4>CHILLI POWDER</h4></a>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

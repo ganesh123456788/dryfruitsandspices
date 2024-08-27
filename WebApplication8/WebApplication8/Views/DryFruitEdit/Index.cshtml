@@ -19,10 +19,17 @@
     <div class="profile-icon">
         <i class="fas fa-user-circle"></i>
         <div class="profile-dropdown">
+<<<<<<< HEAD
             <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
             <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
             <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
             <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+=======
+            <a href="@Url.Action("Profile", "Home")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("Settings", "Home")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("SignOut", "Home")"><button onclick="myFunction()">SIGN OUT</button></a>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
         </div>
     </div>
 </header>
@@ -171,8 +178,12 @@
                 <th>IMAGE</th>
                 <th>DESCRIPTION</th>
                 <th>PRICE</th>
+<<<<<<< HEAD
                 <th>ShortStory</th>
                 <th></th>
+=======
+                <th>ACTIONS</th>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
             </tr>
             @foreach (var item in Model)
             {
@@ -186,8 +197,11 @@
                     <td>@Html.DisplayFor(modelItem => item.ImageName)</td>
                     <td class="description-column">@Html.DisplayFor(modelItem => item.Description)</td>
                     <td>@Html.DisplayFor(modelItem => item.Price)</td>
+<<<<<<< HEAD
                     <td class="description-column">@Html.DisplayFor(modelItem => item.ShortStory)</td>
 
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     <td>
                         <button> @Html.ActionLink("Edit", "Edit", new { imageName = item.ImageName })</button> |
                         <button>@Html.ActionLink("Delete", "Delete", new { imageName = item.ImageName })</button>

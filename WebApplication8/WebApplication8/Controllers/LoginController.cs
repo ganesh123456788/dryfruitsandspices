@@ -38,18 +38,32 @@ namespace WebApplication8.Controllers
                                 // Verify the provided password
                                 if (BCrypt.Net.BCrypt.Verify(model.Password, storedHashedPassword))
                                 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                                     // Store user details in TempData
                                     TempData["Email"] = model.Email;
                                     TempData["Password"] = model.Password;
                                     TempData["Role"] = role;
 
+<<<<<<< HEAD
+=======
+=======
+                                    // Redirect based on role
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                                     if (role.Equals("admin", StringComparison.OrdinalIgnoreCase))
                                     {
                                         return RedirectToAction("ddryfruitsandspices", "Home");
                                     }
                                     else if (role.Equals("user", StringComparison.OrdinalIgnoreCase))
                                     {
+<<<<<<< HEAD
                                         return RedirectToAction("Index", "Combined");
+=======
+                                        return RedirectToAction("adminpage", "Home");
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                                     }
                                     else
                                     {
@@ -72,6 +86,10 @@ namespace WebApplication8.Controllers
 
             return View(model);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
 
         [HttpGet]
         public ActionResult EditUser()
@@ -145,5 +163,10 @@ namespace WebApplication8.Controllers
 
             return View(model);
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
     }
 }

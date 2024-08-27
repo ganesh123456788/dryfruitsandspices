@@ -19,7 +19,11 @@ namespace WebApplication8.Controllers
             var dryFruitsList = new List<DryFruits>();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+<<<<<<< HEAD
                 string query = "SELECT ImageName, ImagePath, Description, Price, ShortStory FROM DryFruits";
+=======
+                string query = "SELECT ImageFile, ImageName, ImagePath, Description, Price FROM DryFruits";
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -28,11 +32,24 @@ namespace WebApplication8.Controllers
                     var dryFruits = new DryFruits
                     {
                         ImageName = reader["ImageName"].ToString(),
+<<<<<<< HEAD
                         ImagePath = reader["ImagePath"] != DBNull.Value ? reader["ImagePath"].ToString() : string.Empty,
                         Description = reader["Description"] != DBNull.Value ? reader["Description"].ToString() : string.Empty,
                         Price = reader["Price"] != DBNull.Value ? Convert.ToInt32(reader["Price"]) : 0,
                         ShortStory = reader["ShortStory"] != DBNull.Value ? reader["ShortStory"].ToString() : string.Empty
                     };
+=======
+                        ImagePath = reader["ImagePath"]?.ToString(),
+                        Description = reader["Description"].ToString(),
+                        Price = Convert.ToInt32(reader["Price"])
+                    };
+                    if (reader["ImageFile"] != DBNull.Value)
+                    {
+                        byte[] imageData = (byte[])reader["ImageFile"];
+                        string base64String = Convert.ToBase64String(imageData);
+                        dryFruits.ImagePath = "data:image/png;base64," + base64String;
+                    }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     dryFruitsList.Add(dryFruits);
                 }
                 connection.Close();
@@ -53,6 +70,7 @@ namespace WebApplication8.Controllers
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 string imagePath = null;
                 if (dryFruits.ImageFile != null)
                 {
@@ -60,18 +78,36 @@ namespace WebApplication8.Controllers
                     imagePath = Path.Combine(Server.MapPath("~/Content/"), fileName);
                     dryFruits.ImageFile.SaveAs(imagePath);
                     dryFruits.ImagePath = "/Content/" + fileName;
+=======
+                byte[] imageData = null;
+                if (dryFruits.ImageFile != null)
+                {
+                    using (var binaryReader = new BinaryReader(dryFruits.ImageFile.InputStream))
+                    {
+                        imageData = binaryReader.ReadBytes(dryFruits.ImageFile.ContentLength);
+                    }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 }
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
+<<<<<<< HEAD
                     string query = "INSERT INTO DryFruits (ImageName, ImagePath, Description, Price, ShortStory) VALUES (@ImageName, @ImagePath, @Description, @Price, @ShortStory)";
                     SqlCommand command = new SqlCommand(query, connection);
 
+=======
+                    string query = "INSERT INTO DryFruits (ImageFile, ImageName, ImagePath, Description, Price) VALUES (@ImageFile, @ImageName, @ImagePath, @Description, @Price)";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@ImageFile", imageData ?? (object)DBNull.Value);
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     command.Parameters.AddWithValue("@ImageName", dryFruits.ImageName);
                     command.Parameters.AddWithValue("@ImagePath", dryFruits.ImagePath ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@Description", dryFruits.Description);
                     command.Parameters.AddWithValue("@Price", dryFruits.Price);
+<<<<<<< HEAD
                     command.Parameters.AddWithValue("@ShortStory", dryFruits.ShortStory ?? (object)DBNull.Value);
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -88,7 +124,11 @@ namespace WebApplication8.Controllers
             DryFruits dryFruits = null;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+<<<<<<< HEAD
                 string query = "SELECT ImageName, ImagePath, Description, Price, ShortStory FROM DryFruits WHERE ImageName = @ImageName";
+=======
+                string query = "SELECT ImageFile, ImageName, ImagePath, Description, Price FROM DryFruits WHERE ImageName = @ImageName";
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ImageName", imageName);
 
@@ -99,11 +139,24 @@ namespace WebApplication8.Controllers
                     dryFruits = new DryFruits
                     {
                         ImageName = reader["ImageName"].ToString(),
+<<<<<<< HEAD
                         ImagePath = reader["ImagePath"] != DBNull.Value ? reader["ImagePath"].ToString() : string.Empty,
                         Description = reader["Description"] != DBNull.Value ? reader["Description"].ToString() : string.Empty,
                         Price = reader["Price"] != DBNull.Value ? Convert.ToInt32(reader["Price"]) : 0,
                         ShortStory = reader["ShortStory"] != DBNull.Value ? reader["ShortStory"].ToString() : string.Empty
                     };
+=======
+                        ImagePath = reader["ImagePath"]?.ToString(),
+                        Description = reader["Description"].ToString(),
+                        Price = Convert.ToInt32(reader["Price"])
+                    };
+                    if (reader["ImageFile"] != DBNull.Value)
+                    {
+                        byte[] imageData = (byte[])reader["ImageFile"];
+                        string base64String = Convert.ToBase64String(imageData);
+                        dryFruits.ImagePath = "data:image/png;base64," + base64String;
+                    }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 }
                 connection.Close();
             }
@@ -117,6 +170,7 @@ namespace WebApplication8.Controllers
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 string imagePath = dryFruits.ImagePath;
                 if (dryFruits.ImageFile != null)
                 {
@@ -124,18 +178,36 @@ namespace WebApplication8.Controllers
                     imagePath = Path.Combine(Server.MapPath("~/Content/"), fileName);
                     dryFruits.ImageFile.SaveAs(imagePath);
                     dryFruits.ImagePath = "/Content/" + fileName;
+=======
+                byte[] imageData = null;
+                if (dryFruits.ImageFile != null)
+                {
+                    using (var binaryReader = new BinaryReader(dryFruits.ImageFile.InputStream))
+                    {
+                        imageData = binaryReader.ReadBytes(dryFruits.ImageFile.ContentLength);
+                    }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 }
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
+<<<<<<< HEAD
                     string query = "UPDATE DryFruits SET ImagePath = @ImagePath, Description = @Description, Price = @Price, ShortStory = @ShortStory WHERE ImageName = @ImageName";
                     SqlCommand command = new SqlCommand(query, connection);
 
+=======
+                    string query = "UPDATE DryFruits SET ImageFile = @ImageFile, ImagePath = @ImagePath, Description = @Description, Price = @Price WHERE ImageName = @ImageName";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@ImageFile", imageData ?? (object)DBNull.Value);
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     command.Parameters.AddWithValue("@ImageName", dryFruits.ImageName);
                     command.Parameters.AddWithValue("@ImagePath", dryFruits.ImagePath ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@Description", dryFruits.Description);
                     command.Parameters.AddWithValue("@Price", dryFruits.Price);
+<<<<<<< HEAD
                     command.Parameters.AddWithValue("@ShortStory", dryFruits.ShortStory ?? (object)DBNull.Value);
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -152,7 +224,11 @@ namespace WebApplication8.Controllers
             DryFruits dryFruits = null;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+<<<<<<< HEAD
                 string query = "SELECT ImageName, ImagePath, Description, Price, ShortStory FROM DryFruits WHERE ImageName = @ImageName";
+=======
+                string query = "SELECT ImageFile, ImageName, ImagePath, Description, Price FROM DryFruits WHERE ImageName = @ImageName";
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ImageName", imageName);
 
@@ -163,11 +239,24 @@ namespace WebApplication8.Controllers
                     dryFruits = new DryFruits
                     {
                         ImageName = reader["ImageName"].ToString(),
+<<<<<<< HEAD
                         ImagePath = reader["ImagePath"] != DBNull.Value ? reader["ImagePath"].ToString() : string.Empty,
                         Description = reader["Description"] != DBNull.Value ? reader["Description"].ToString() : string.Empty,
                         Price = reader["Price"] != DBNull.Value ? Convert.ToInt32(reader["Price"]) : 0,
                         ShortStory = reader["ShortStory"] != DBNull.Value ? reader["ShortStory"].ToString() : string.Empty
                     };
+=======
+                        ImagePath = reader["ImagePath"]?.ToString(),
+                        Description = reader["Description"].ToString(),
+                        Price = Convert.ToInt32(reader["Price"])
+                    };
+                    if (reader["ImageFile"] != DBNull.Value)
+                    {
+                        byte[] imageData = (byte[])reader["ImageFile"];
+                        string base64String = Convert.ToBase64String(imageData);
+                        dryFruits.ImagePath = "data:image/png;base64," + base64String;
+                    }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 }
                 connection.Close();
             }

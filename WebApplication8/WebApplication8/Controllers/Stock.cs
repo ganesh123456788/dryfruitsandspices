@@ -47,10 +47,14 @@ namespace WebApplication8.Controllers
                             // Get the value from the reader by column name
                             var columnName = property.Name;
                             var value = reader[columnName];
+<<<<<<< HEAD
                             if (value != DBNull.Value)
                             {
                                 property.SetValue(item, Convert.ChangeType(value, property.PropertyType));
                             }
+=======
+                            property.SetValue(item, Convert.ChangeType(value, property.PropertyType));
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                         }
                         list.Add(item);
                     }
@@ -61,6 +65,7 @@ namespace WebApplication8.Controllers
         }
 
         [HttpPost]
+<<<<<<< HEAD
         public ActionResult Upload(HttpPostedFileBase file, string category, string description = "Default Description", int price = 0)
         {
             if (file != null && file.ContentLength > 0 && IsValidCategory(category))
@@ -70,18 +75,48 @@ namespace WebApplication8.Controllers
                 file.SaveAs(path);
 
                 string query = GetInsertQuery(category);
+=======
+        public ActionResult Upload(HttpPostedFileBase file, string category)
+        {
+            if (file != null && file.ContentLength > 0)
+            {
+                var fileName = System.IO.Path.GetFileName(file.FileName);
+                var path = System.IO.Path.Combine(Server.MapPath("~/Content/"), fileName);
+                file.SaveAs(path);
+
+                string query = string.Empty;
+                switch (category)
+                {
+                    case "Spices":
+                        query = "INSERT INTO Spices (ImageName, ImagePath, Description, Price) VALUES (@ImageName, @ImagePath, @Description, @Price)";
+                        break;
+                    case "DryFruits":
+                        query = "INSERT INTO DryFruits (ImageName, ImagePath, Description, Price) VALUES (@ImageName, @ImagePath, @Description, @Price)";
+                        break;
+                    case "Chocolates":
+                        query = "INSERT INTO Chocolate (ImageName, ImagePath, Description, Price) VALUES (@ImageName, @ImagePath, @Description, @Price)";
+                        break;
+                }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
 
                 using (var connection = new SqlConnection(_connectionString))
                 {
                     var command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@ImageName", fileName);
+<<<<<<< HEAD
                     command.Parameters.AddWithValue("@ImagePath", "~/Content/" + fileName); // Adjusted path to match URL
                     command.Parameters.AddWithValue("@Description", description);
                     command.Parameters.AddWithValue("@Price", price);
+=======
+                    command.Parameters.AddWithValue("@ImagePath", "/Content/" + fileName); // Ensure this path is correct
+                    command.Parameters.AddWithValue("@Description", "Default Description");
+                    command.Parameters.AddWithValue("@Price", 0);
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
+<<<<<<< HEAD
             else
             {
                 // Handle invalid file or category
@@ -110,5 +145,10 @@ namespace WebApplication8.Controllers
                     throw new ArgumentException("Invalid category");
             }
         }
+=======
+
+            return RedirectToAction("Index");
+        }
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
     }
 }

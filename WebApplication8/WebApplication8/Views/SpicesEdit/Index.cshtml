@@ -19,10 +19,17 @@
     <div class="profile-icon">
         <i class="fas fa-user-circle"></i>
         <div class="profile-dropdown">
+<<<<<<< HEAD
             <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
             <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
             <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
             <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+=======
+            <a href="@Url.Action("Profile", "Home")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("Settings", "Home")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("SignOut", "Home")"><button onclick="myFunction()">SIGN OUT</button></a>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
         </div>
     </div>
 </header>
@@ -162,7 +169,11 @@
                 <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
             </a>
     </center>
+<<<<<<< HEAD
     <CENTER>
+=======
+    <center>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
         <h2>Spices</h2>
 
         <table>
@@ -171,18 +182,26 @@
                 <th>IMAGE</th>
                 <th>DESCRIPTION</th>
                 <th>PRICE</th>
+<<<<<<< HEAD
                 <th>ShortStory</th>
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                 <th></th>
             </tr>
             @foreach (var item in Model)
             {
                 <tr>
+<<<<<<< HEAD
+=======
+                    <td style="font-weight: bold;">@Html.DisplayFor(modelItem => item.ImageName)</td>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
                     <td>
                         @if (item.ImagePath != null)
                         {
                             <img src="@item.ImagePath" width="100" />
                         }
                     </td>
+<<<<<<< HEAD
                     <td>@Html.DisplayFor(modelItem => item.ImageName)</td>
                     <td class="description-column">@Html.DisplayFor(modelItem => item.Description)</td>
                     <td>@Html.DisplayFor(modelItem => item.Price)</td>
@@ -194,3 +213,16 @@
                     </td>
                 </tr>
             }
+=======
+
+                    <td class="description-column">@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>Rs.@Html.DisplayFor(modelItem => item.Price)</td>
+                    <td>
+                        <button class="button"> @Html.ActionLink("Edit", "Edit", new { imageName = item.ImageName })</button> |
+                        <button class="button">@Html.ActionLink("Delete", "Delete", new { imageName = item.ImageName })</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </center>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
