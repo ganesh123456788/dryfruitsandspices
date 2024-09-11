@@ -1,0 +1,181 @@
+﻿@model IEnumerable<WebApplication8.Controllers.CombinedController.ProductDetailViewModel>
+@{
+    ViewBag.Title = "Combined Spices";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combined Spices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-image: url('/Content/pexels-photo-1939485.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .header-icons {
+            position: relative;
+            float: right;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+
+        .fa-cart-shopping {
+            font-size: 30px;
+            margin-right: 100px;
+            display: inline-block;
+        }
+
+        .profile-icon {
+            position: relative;
+            display: inline-block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px 20px;
+            width: 200px;
+            border: 1px solid #070202;
+            top: 40px;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+        .profile-dropdown button {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            background-color: #f4f4f4;
+            cursor: pointer;
+        }
+
+            .profile-dropdown button:hover {
+                background-color: #ddd;
+            }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 1rem; /* Adjust spacing between items */
+            justify-items: center;
+            align-items: center;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .grid-item {
+            text-align: center;
+            position: relative; /* For badge positioning */
+        }
+
+            .grid-item img {
+                width: 100%; /* Adjust image to container width */
+                max-width: 150px; /* Set maximum width */
+                height: auto; /* Maintain aspect ratio */
+                border-radius: 8px; /* Optional: Add rounded corners */
+            }
+
+        .badge {
+            position: absolute;
+            top: -25px;
+            right: 90px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .highlight {
+            background-color: #d4edda; /* Light green background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-icons">
+            <a href="@Url.Action("Index", "ShoppingCart")" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping">
+                    <span class="badge">
+                        @if (Session["Cart"] != null)
+                        {
+                            var cart = (List<ShoppingCartApp.Controllers.ShoppingCartController.CartItem>)Session["Cart"];
+                            @cart.Sum(i => i.Quantity)
+                        }
+                        else
+                        {
+                            @:0
+                        }
+                    </span>
+                </i>
+            </a>
+            <div class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+                <div class="profile-dropdown">
+                    <a href="@Url.Action("EditUser", "Login")"><button>PROFILE</button></a>
+                    <a href="@Url.Action("Index")"><button>HOME</button></a>
+                    <a href="@Url.Action("UserDetails", "Login")"><button>SETTINGS</button></a>
+                    <a href="@Url.Action("Login", "Login")"><button>SIGN OUT</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <center>
+        <a href="@Url.Action("Index")">
+            <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px" alt="Banner Image">
+        </a>
+    </center>
+
+    <form method="get" action="@Url.Action("Index")" style="margin: 20px;">
+        <input type="text" name="query" value="@ViewBag.SearchQuery" placeholder="Search..." style="padding: 5px; font-size: 16px;" />
+        <select name="filter" onchange="this.form.submit()" style="padding: 5px; font-size: 16px;">
+            <option value="">Select Filter</option>
+            <option value="DryFruits" @(ViewBag.Filter == "DryFruits" ? "selected" : "")>DryFruits</option>
+            <option value="Spices" @(ViewBag.Filter == "Spices" ? "selected" : "")>Spices</option>
+            <option value="Chocolate" @(ViewBag.Filter == "Chocolate" ? "selected" : "")>Chocolate</option>
+        </select>
+        <select name="sort" onchange="this.form.submit()" style="padding: 5px; font-size: 16px;">
+            <option value="">Sort By</option>
+            <option value="asc" @(ViewBag.Sort == "asc" ? "selected" : "")>Price: Low to High</option>
+            <option value="desc" @(ViewBag.Sort == "desc" ? "selected" : "")>Price: High to Low</option>
+        </select>
+    </form>
+
+    <div class="grid-container">
+        @foreach (var item in Model)
+        {
+            <div class="grid-item @(ViewBag.SearchQuery != null &&
+                                    (item.ImageName.IndexOf(ViewBag.SearchQuery, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                     item.Description.IndexOf(ViewBag.SearchQuery, StringComparison.OrdinalIgnoreCase) >= 0)
+                                    ? "highlight" : "")">
+                <img src="@(!string.IsNullOrEmpty(item.ImagePath) ? Url.Content(item.ImagePath) : "/Content/default-image.jpg")"
+                     alt="@item.ImageName"
+                     onclick="window.location.href='@Url.Action("GetProductDetails", "ProductDetails", new { imageName = item.ImageName, productType = item.ProductType })'" />
+                <h3>@item.ImageName</h3>
+                <h3>@item.ShortStory</h3>
+                <h3 style="text-align: center;">Price: @item.Price /-</h3>
+            </div>
+        }
+    </div>
+</body>
+</html>

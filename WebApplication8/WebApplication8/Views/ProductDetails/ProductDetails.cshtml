@@ -1,0 +1,222 @@
+﻿@model WebApplication8.Controllers.ProductDetailsController.ProductDetailViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-image: url('/Content/pexels-photo-1939485.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-container {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .fa-cart-shopping {
+            font-size: 30px;
+            position: relative;
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            z-index: 1;
+        }
+
+        .profile-icon {
+            position: relative;
+            font-size: 30px;
+        }
+
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            font-size: 100%;
+            padding: 10px 20px;
+            width: 200px;
+            border: 1px solid #070202;
+            z-index: 2;
+        }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+        .logo-container {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+            .logo-container img {
+                max-height: 150px;
+                width: auto;
+            }
+
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 100%;
+            background-color: goldenrod;
+            border: none;
+            margin-left: 1%;
+            align-items: center;
+        }
+
+        .text {
+            border: 2px solid black;
+            margin-left: 1%;
+            border-width: 5px;
+            border-radius: 10px;
+            max-width: fit-content;
+            text-align: center;
+            margin-top: 1%;
+        }
+
+        .text1 {
+            margin-left: 0px;
+            padding-bottom: 10px;
+            margin-right: 30%;
+            font-weight: 1000;
+            font-style: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="@Url.Action("Index", "Combined")">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" alt="Logo" />
+            </a>
+        </div>
+
+        <div class="icon-container">
+            <div class="cart-container">
+                <a href="@Url.Action("Index", "ShoppingCart")">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge">
+                        @if (Session["Cart"] != null)
+                        {
+                            var cart = (List<ShoppingCartApp.Controllers.ShoppingCartController.CartItem>)Session["Cart"];
+                            @cart.Sum(i => i.Quantity)
+                        }
+                        else
+                        {
+                            @:0
+                        }
+                    </span>
+                </a>
+            </div>
+
+            <div class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+                <div class="profile-dropdown">
+                    <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+                    <a href="@Url.Action("Index", "Combined")"> <button onclick="myFunction()">HOME</button></a>
+                    <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+                    <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <center>
+        <div class="row">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1 class="text1">@Model.ImageName</h1>
+                    <img src="@Url.Content(Model.ImagePath)" alt="@Model.ImageName" style="width:250px; height:200px;" />
+                    <div class="dropdown">
+                        @using (Html.BeginForm("GetProductDetails", "ProductDetails", FormMethod.Get))
+                        {
+                            <input type="hidden" name="imageName" value="@Model.ImageName" />
+                            <input type="hidden" name="productType" value="@Model.ProductType" />
+
+                            <select id="dropdown-menu" name="selectedWeight" style="height: 30px; width: 130px; font-size: medium;" onchange="this.form.submit()">
+                                <option value="250" @(Model.SelectedWeight == 250 ? "selected" : "")>250gms</option>
+                                <option value="500" @(Model.SelectedWeight == 500 ? "selected" : "")>500gms</option>
+                                <option value="1000" @(Model.SelectedWeight == 1000 ? "selected" : "")>1kg</option>
+                                <option value="2000" @(Model.SelectedWeight == 2000 ? "selected" : "")>2kgs</option>
+                                <option value="3000" @(Model.SelectedWeight == 3000 ? "selected" : "")>3kgs</option>
+                                <option value="4000" @(Model.SelectedWeight == 4000 ? "selected" : "")>4kgs</option>
+                                <option value="5000" @(Model.SelectedWeight == 5000 ? "selected" : "")>5kgs</option>
+                            </select>
+                        }
+
+                        <h2 style="text-align: center;">Price: Rs. @Model.Price/-</h2>
+
+                        @using (Html.BeginForm("AddToCart", "ShoppingCart", FormMethod.Post, new { id = "addToCartForm" }))
+                        {
+                            <input type="hidden" name="imageName" value="@Model.ImageName" />
+                            <input type="hidden" name="itemType" value="@Model.ProductType" />
+                            <br />
+                            <button type="button" style="text-align: center;" onclick="addToCart()">Add to cart</button>
+                        }
+
+                        <p style="font-size: 20px" class="text">
+                            <b>BENEFITS:</b>
+                            @Model.Description
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        function addToCart() {
+            var form = $('#addToCartForm');
+            $.ajax({
+                url: form.attr('action'),
+                type: form.attr('method'),
+                data: form.serialize(),
+                success: function (response) {
+                    // Update the cart count
+                    updateCartCount(response.newCartCount);
+
+                    // Optionally, show a message that the item was added
+                    alert('Item added to cart successfully!');
+                },
+                error: function () {
+                    alert('Failed to add item to cart. Please try again.');
+                }
+            });
+        }
+
+        function updateCartCount(count) {
+            $('.badge').text(count);
+        }
+    </script>
+</body>
+</html>
