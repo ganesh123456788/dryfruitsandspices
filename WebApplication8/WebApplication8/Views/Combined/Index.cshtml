@@ -20,6 +20,7 @@
             position: relative;
             float: right;
             margin-top: 70px;
+<<<<<<< HEAD
             margin-right: 20px;
         }
 
@@ -33,6 +34,24 @@
             position: relative;
             display: inline-block;
             font-size: 30px;
+=======
+            margin-right: 20px; /* Adjust as needed for overall spacing */
+        }
+
+        .fa-cart-shopping {
+            position: relative;
+            font-size: 30px;
+            margin-right: 100px; /* Increased space between cart and profile icon */
+            display: inline-block; /* Ensure it aligns properly */
+        }
+
+        .profile-icon {
+            position: absolute;
+            font-size: 30px;
+            top: 0; /* Align with cart icon */
+            right: 0; /* Align to the right edge */
+            margin-right: 0; /* Ensure correct positioning */
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             cursor: pointer;
         }
 
@@ -41,11 +60,18 @@
             position: absolute;
             background-color: white;
             padding: 10px 20px;
+<<<<<<< HEAD
             width: 200px;
             border: 1px solid #070202;
             top: 40px;
             right: 0;
             z-index: 1000;
+=======
+            width: 60%;
+            border: 1px solid #070202;
+            top: 40px; /* Adjust to appear below the profile icon */
+            right: 0;
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         }
 
         .profile-icon:hover .profile-dropdown {
@@ -57,6 +83,7 @@
             padding: 10px 0;
             margin-bottom: 5px;
             font-weight: bold;
+<<<<<<< HEAD
             font-size: 16px;
             text-align: center;
             border: none;
@@ -72,6 +99,16 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
             gap: 1rem; /* Adjust spacing between items */
+=======
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3%;
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             justify-items: center;
             align-items: center;
             max-width: 100%;
@@ -80,6 +117,7 @@
 
         .grid-item {
             text-align: center;
+<<<<<<< HEAD
             position: relative; /* For badge positioning */
         }
 
@@ -94,6 +132,19 @@
             position: absolute;
             top: -25px;
             right: 90px;
+=======
+        }
+
+        .small-image {
+            width: 150px; /* Adjust as necessary */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             background-color: red;
             color: white;
             border-radius: 50%;
@@ -104,10 +155,13 @@
             align-items: center;
             justify-content: center;
         }
+<<<<<<< HEAD
 
         .highlight {
             background-color: #d4edda; /* Light green background */
         }
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
     </style>
 </head>
 <body>
@@ -131,10 +185,17 @@
             <div class="profile-icon">
                 <i class="fas fa-user-circle"></i>
                 <div class="profile-dropdown">
+<<<<<<< HEAD
                     <a href="@Url.Action("EditUser", "Login")"><button>PROFILE</button></a>
                     <a href="@Url.Action("Index")"><button>HOME</button></a>
                     <a href="@Url.Action("UserDetails", "Login")"><button>SETTINGS</button></a>
                     <a href="@Url.Action("Login", "Login")"><button>SIGN OUT</button></a>
+=======
+                    <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+                    <a href="@Url.Action("Index")"> <button onclick="myFunction()">HOME</button></a>
+                    <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+                    <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
                 </div>
             </div>
         </div>
@@ -146,6 +207,7 @@
         </a>
     </center>
 
+<<<<<<< HEAD
     <form method="get" action="@Url.Action("Index")" style="margin: 20px;">
         <input type="text" name="query" value="@ViewBag.SearchQuery" placeholder="Search..." style="padding: 5px; font-size: 16px;" />
         <select name="filter" onchange="this.form.submit()" style="padding: 5px; font-size: 16px;">
@@ -177,5 +239,21 @@
             </div>
         }
     </div>
+=======
+    <div class="grid-container">
+        @foreach (var item in Model)
+        {
+            <div class="grid-item">
+                <img src="@Url.Content(item.ImagePath)" alt="@item.ImageName"
+                     style="width:100px; height:100px; cursor:pointer;"
+                     onclick="window.location.href='@Url.Action("GetProductDetails", "ProductDetails", new { imageName = item.ImageName, productType = item.ProductType })'" />
+                <h3>@item.ImageName</h3>
+                <h3 style="text-align: center;">Price: @item.Price /-</h3>
+                <h3>Short Description : @item.ShortStory</h3>
+            </div>
+        }
+    </div>
+
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
 </body>
 </html>

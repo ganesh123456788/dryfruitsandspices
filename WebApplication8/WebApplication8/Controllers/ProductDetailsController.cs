@@ -17,7 +17,10 @@ namespace WebApplication8.Controllers
             public string ItemType { get; set; }
             public string ProductType { get; set; } // "DryFruits", "Spices", or "Chocolates"
             public int SelectedWeight { get; set; } // New property for weight
+<<<<<<< HEAD
             public string ShortStory { get; internal set; }
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         }
 
         // Action to get product details

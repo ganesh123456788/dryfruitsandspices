@@ -24,14 +24,39 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         public ActionResult Payment()
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         public ActionResult stock2()
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         public ActionResult Combinedpage()
         {
             return View();
@@ -324,6 +349,23 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         public ActionResult stock()
         {
             return View();

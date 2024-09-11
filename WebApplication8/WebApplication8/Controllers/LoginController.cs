@@ -1,33 +1,47 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Web.Mvc;
 using WebApplication8.Models;
 using BCrypt.Net;
 using System.Configuration;
+=======
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Web.Mvc;
+using WebApplication8.Models;
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
 
 namespace WebApplication8.Controllers
 {
     public class LoginController : Controller
     {
+<<<<<<< HEAD
         private string GetConnectionString()
         {
             return ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
         }
 
         // GET: Login
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         [HttpGet]
         public ActionResult Login()
         {
             return View();
         }
 
+<<<<<<< HEAD
         // POST: Login
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -72,6 +86,57 @@ namespace WebApplication8.Controllers
                                     else
                                     {
                                         ModelState.AddModelError("", "Invalid email or password.");
+=======
+                string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT Password, Role FROM UserRegistrationDB WHERE Email = @Email";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", model.Email);
+
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string storedHashedPassword = reader["Password"].ToString();
+                                string role = reader["Role"].ToString();
+
+                                // Verify the provided password
+                                if (BCrypt.Net.BCrypt.Verify(model.Password, storedHashedPassword))
+                                {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    // Store user details in TempData
+                                    TempData["Email"] = model.Email;
+                                    TempData["Password"] = model.Password;
+                                    TempData["Role"] = role;
+
+<<<<<<< HEAD
+=======
+=======
+                                    // Redirect based on role
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    if (role.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        return RedirectToAction("ddryfruitsandspices", "Home");
+                                    }
+                                    else if (role.Equals("user", StringComparison.OrdinalIgnoreCase))
+                                    {
+<<<<<<< HEAD
+                                        return RedirectToAction("Index", "Combined");
+=======
+                                        return RedirectToAction("adminpage", "Home");
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    }
+                                    else
+                                    {
+                                        ModelState.AddModelError("", "Role is not recognized.");
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
                                     }
                                 }
                                 else
@@ -79,6 +144,7 @@ namespace WebApplication8.Controllers
                                     ModelState.AddModelError("", "Invalid email or password.");
                                 }
                             }
+<<<<<<< HEAD
                         }
                     }
                 }
@@ -138,19 +204,28 @@ namespace WebApplication8.Controllers
                             else
                             {
                                 ModelState.AddModelError("", "Email address not found.");
+=======
+                            else
+                            {
+                                ModelState.AddModelError("", "Invalid email or password.");
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
                             }
                         }
                     }
                 }
+<<<<<<< HEAD
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                     ModelState.AddModelError("", "An error occurred while processing your request.");
                 }
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             }
 
             return View(model);
         }
+<<<<<<< HEAD
 
         private void SendResetEmail(string email, string resetLink)
         {
@@ -252,10 +327,24 @@ namespace WebApplication8.Controllers
             var email = Session["Email"] as string;
 
             if (string.IsNullOrEmpty(email))
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+
+        [HttpGet]
+        public ActionResult EditUser()
+        {
+            var email = TempData["Email"] as string;
+
+            if (email == null)
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             {
                 return RedirectToAction("Login");
             }
 
+<<<<<<< HEAD
             try
             {
                 using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -286,10 +375,36 @@ namespace WebApplication8.Controllers
                             {
                                 return RedirectToAction("Login");
                             }
+=======
+            string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Email, Password, Role, DateOfBirth, Gender FROM UserRegistrationDB WHERE Email = @Email";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Email", email);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            var editUserModel = new EditUserViewModel
+                            {
+                                Email = reader["Email"].ToString(),
+                                Password = reader["Password"].ToString(),
+                                Role = reader["Role"].ToString(),
+                                DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
+                                Gender = reader["Gender"].ToString()
+                            };
+
+                            return View(editUserModel);
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
                         }
                     }
                 }
             }
+<<<<<<< HEAD
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
@@ -298,11 +413,18 @@ namespace WebApplication8.Controllers
         }
 
         // POST: EditUser
+=======
+
+            return RedirectToAction("Login");
+        }
+
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         [HttpPost]
         public ActionResult EditUser(EditUserViewModel model)
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -335,9 +457,41 @@ namespace WebApplication8.Controllers
                     System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                     ModelState.AddModelError("", "An error occurred while updating your details.");
                 }
+=======
+                string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.Password);
+                    string query = "UPDATE UserRegistrationDB SET Email = @Email, Password = @Password, Role = @Role, DateOfBirth = @DateOfBirth, Gender = @Gender WHERE Email = @OldEmail";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", model.Email);
+                        command.Parameters.AddWithValue("@Password", hashedPassword);
+                        command.Parameters.AddWithValue("@Role", model.Role);
+                        command.Parameters.AddWithValue("@DateOfBirth", model.DateOfBirth);
+                        command.Parameters.AddWithValue("@Gender", model.Gender);
+                        command.Parameters.AddWithValue("@OldEmail", TempData["Email"].ToString());
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        // Update TempData with new values
+                        TempData["Email"] = model.Email;
+                        TempData["Password"] = model.Password;
+                        TempData["Role"] = model.Role;
+                        return RedirectToAction("adminpage", "Home");
+                    }
+                }
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             }
 
             return View(model);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
     }
 }

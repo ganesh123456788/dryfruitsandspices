@@ -18,10 +18,23 @@
     <div class="profile-icon">
         <i class="fas fa-user-circle"></i>
         <div class="profile-dropdown">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
             <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
             <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
             <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
             <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+<<<<<<< HEAD
+=======
+=======
+            <a href="@Url.Action("Profile", "Home")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspcies", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("Settings", "Home")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("SignOut", "Home")"><button onclick="myFunction()">SIGN OUT</button></a>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         </div>
     </div>
 </header>
@@ -160,6 +173,10 @@
         {
             @Html.AntiForgeryToken()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         <div class="form-horizontal" align="center">
             <h4>Spices</h4>
             <hr />
@@ -214,6 +231,56 @@
             </div>
 
         </div>
+<<<<<<< HEAD
+=======
+=======
+            <div class="form-horizontal" align="center">
+                <h4>Spices</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ImageName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ImageName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ImageFile, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <input type="file" name="ImageFile" />
+                        @Html.ValidationMessageFor(model => model.ImageFile, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+
+                </div>
+
+            </div>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
         }
 
     </center>
