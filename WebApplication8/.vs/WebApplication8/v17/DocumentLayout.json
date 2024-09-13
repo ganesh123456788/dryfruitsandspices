@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\new folder\\new folder (2)\\webapplication8\\webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAAMQAAAAAzMzMzMwMwM8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T13:44:51.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
