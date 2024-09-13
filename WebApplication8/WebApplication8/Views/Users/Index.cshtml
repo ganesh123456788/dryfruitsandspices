@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D Dry Fruits</title>
@@ -119,11 +120,140 @@
             justify-content: center;
             margin: 20px;
         }
+=======
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="SWITCH"></div>
+
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+            <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+<<<<<<< HEAD
+=======
+=======
+            <a href="@Url.Action("Profile", "Home")"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+            <a href="@Url.Action("Settings", "Home")"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="@Url.Action("SignOut", "Home")"><button onclick="myFunction()">SIGN OUT</button></a>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 2px solid black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: CENTER;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .fa-cart-shopping {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .add-button {
+        float: right;
+        position: absolute;
+        right: 280px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        width: 38px;
+        font-size: 14px;
+        top: 70px;
+        padding: 1PX;
+        background-color: white;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .button-container {
+        display: flex;
+    }
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
 
         .button-container a {
             margin-right: 10px;
         }
 
+<<<<<<< HEAD
         .description-column {
             width: 30%;
             max-width: 300px;
@@ -274,3 +404,91 @@
     </script>
 </body>
 </html>
+=======
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .description-column {
+        width: 30%; /* Adjust as needed */
+        max-width: 300px; /* Optional: Set a max-width to prevent excessive width */
+        word-wrap: break-word; /* Ensure long words wrap */
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+</style>
+<body>
+    <center>
+        <a>
+            <a href="@Url.Action("ddryfruitsandspices", "Home")">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+            <h2>User List</h2>
+    </center>
+    <form method="get" action="@Url.Action("Index")">
+        <div class="form-group">
+            <label for="roleFilter">Role:</label>
+            @Html.DropDownList("roleFilter", roles, "Select Role", new { @class = "form-control", id = "roleFilter" })
+        </div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+    <Center>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        First Name
+                        @Html.DropDownList("firstNameFilter", ViewBag.FirstNames as SelectList, "All First Names", new { @class = "form-control", onchange = "this.form.submit();" })
+                    </th>
+                    <th>
+                        Last Name
+                        @Html.DropDownList("lastNameFilter", ViewBag.LastNames as SelectList, "All Last Names", new { @class = "form-control", onchange = "this.form.submit();" })
+                    </th>
+                    <th>
+                        Email
+                        @Html.DropDownList("emailFilter", ViewBag.Emails as SelectList, "All Emails", new { @class = "form-control", onchange = "this.form.submit();" })
+                    </th>
+                    <th>
+                        Role
+                        <!-- Add a dropdown in the header to filter by role -->
+                        @Html.DropDownList("roleFilterHeader", roles, "Select Role", new { @class = "form-control", id = "roleFilterHeader", onchange = "filterByRole()" })
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td>@user.Email</td>
+                        <td>@user.Role</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <script type="text/javascript">
+    function filterByRole() {
+        var role = document.getElementById('roleFilterHeader').value;
+        window.location.href = '@Url.Action("Index", "Users")' + '?roleFilter=' + encodeURIComponent(role);
+    }
+        </script>
+    </Center>
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
