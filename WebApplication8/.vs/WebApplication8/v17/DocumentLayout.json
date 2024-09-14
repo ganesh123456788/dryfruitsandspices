@@ -1,12 +1,530 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\",
   "Documents": [],
+=======
+<<<<<<< HEAD
+  "WorkspaceRootPath": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\new folder\\new folder (2)\\webapplication8\\webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+=======
+<<<<<<< HEAD
+  "WorkspaceRootPath": "F:\\GIT Push\\New folder\\WebApplication8\\",
+  "Documents": [],
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+  "WorkspaceRootPath": "F:\\GIT Push\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\webapplication8\\webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\webapplication8\\webapplication8\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\WebApplication8\\webapplication8\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\WebApplication8\\webapplication8\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\webapplication8\\webapplication8\\views\\login\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\login\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\WebApplication8\\webapplication8\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\WebApplication8\\webapplication8\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+<<<<<<< HEAD
+  "WorkspaceRootPath": "F:\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\home\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\adminpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+=======
+<<<<<<< HEAD
+  "WorkspaceRootPath": "F:\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\home\\ddryfruitsandspices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\ddryfruitsandspices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\webapplication8\\webapplication8\\views\\spicesedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\spicesedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\controllers\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\WebApplication8\\webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\savepage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\savepage2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\ccloves.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\ccloves.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\spices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\spices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\stock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\stock.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|c:\\users\\dell\\source\\repos\\webapplication8\\webapplication8\\views\\home\\savepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\home\\savepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+    }
+  ],
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< HEAD
       "DocumentGroups": []
+=======
+<<<<<<< HEAD
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+=======
+<<<<<<< HEAD
+      "DocumentGroups": []
+=======
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+<<<<<<< HEAD
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (2)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAAMQAAAAAzMzMzMwMwM8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T13:44:51.329Z",
+              "EditorCaption": ""
+=======
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication8\\Web.config",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeToolTip": "WebApplication8\\Web.config",
+<<<<<<< HEAD
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-26T11:01:50.444Z",
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-14T00:17:21.516Z",
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "adminpage.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\adminpage.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\adminpage.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\adminpage.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\adminpage.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAIwD4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T10:17:45.492Z",
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Login\\EditUser.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAcwGIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T23:12:35.322Z",
+=======
+              "DocumentIndex": 5,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\LoginViewModel.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:10:00.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication8\\Web.config",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeToolTip": "WebApplication8\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-29T07:24:05.706Z",
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+<<<<<<< HEAD
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AQIAAAMBAAAAAAAAAAAYwA0BAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T20:40:32.64Z",
+=======
+<<<<<<< HEAD
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\LoginController.cs",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwF4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T22:59:17.838Z",
+              "EditorCaption": ""
+=======
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Account\\Login.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAIwIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T07:22:46.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Account\\Register.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T07:21:33.289Z",
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\SpicesEdit\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T10:43:37.761Z",
+=======
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+<<<<<<< HEAD
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication8\\Web.config",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Web.config",
+              "RelativeToolTip": "WebApplication8\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-08T11:16:28.462Z",
+=======
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "WebApplication8\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T13:19:48.948Z",
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\User.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\User.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T09:09:11.046Z",
+=======
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "ddryfruitsandspices.cshtml",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\ddryfruitsandspices.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T10:12:13.945Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "savepage2.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\savepage2.cshtml",
+              "ViewState": "AQIAAEgAAAAAZmZmZmYkwPUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:08:37.451Z",
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+<<<<<<< HEAD
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAqwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T21:04:27.513Z",
+              "EditorCaption": ""
+=======
+<<<<<<< HEAD
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Account\\Register.cshtml",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T12:28:43.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\AccountController.cs",
+              "ToolTip": "F:\\GIT Push\\WebApplication8\\WebApplication8\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAkwIgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T12:27:48.932Z"
+=======
+              "Title": "ccloves.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\ccloves.cshtml",
+              "ViewState": "AQIAAGoAAAAAMzMzMzMrwHMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:07:59.825Z",
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+<<<<<<< HEAD
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\AccountController.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T12:17:58.387Z",
+              "EditorCaption": ""
+=======
+<<<<<<< HEAD
+              "Title": "Stock.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Controllers\\Stock.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\Stock.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Controllers\\Stock.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\Stock.cs",
+              "ViewState": "AQIAAEAAAAAANDMzMzMDwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:25:45.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chocolate.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\Chocolate.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\Chocolate.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\Chocolate.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\Chocolate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:23:22.647Z"
+=======
+              "Title": "spices.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\spices.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\spices.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\spices.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\spices.cshtml",
+              "ViewState": "AQIAALcAAAAAAAAAAAAwwMYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:07:17.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SAVEPAGE.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\SAVEPAGE.cshtml",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAwwPEAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T12:01:44.056Z",
+              "EditorCaption": ""
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+<<<<<<< HEAD
+              "Title": "CombinedViewModel.cs",
+              "DocumentMoniker": "F:\\WebApplication8\\WebApplication8\\Models\\CombinedViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\CombinedViewModel.cs",
+              "ToolTip": "F:\\WebApplication8\\WebApplication8\\Models\\CombinedViewModel.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\CombinedViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:22:18.408Z"
+=======
+              "Title": "stock.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\stock.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Home\\stock.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\WebApplication8\\WebApplication8\\Views\\Home\\stock.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Home\\stock.cshtml",
+              "ViewState": "AQIAAJkBAAAAAAAAAAAhwKkBAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T11:55:15.836Z",
+              "EditorCaption": ""
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+            }
+          ]
+        }
+      ]
+<<<<<<< HEAD
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     }
   ]
 }

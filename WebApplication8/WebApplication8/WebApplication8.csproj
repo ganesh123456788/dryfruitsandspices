@@ -34,7 +34,22 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+<<<<<<< HEAD
     <UseVSHostingProcess>true</UseVSHostingProcess>
+=======
+<<<<<<< HEAD
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+=======
+<<<<<<< HEAD
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+=======
+<<<<<<< HEAD
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,13 +61,44 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net48\BCrypt.Net-Next.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+<<<<<<< HEAD
     <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
     </Reference>
+=======
+<<<<<<< HEAD
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
+    </Reference>
+=======
+<<<<<<< HEAD
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.3\lib\net46\NLog.dll</HintPath>
+    </Reference>
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -65,7 +111,18 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="System.IO.Compression" />
+=======
+<<<<<<< HEAD
+    <Reference Include="System.IO.Compression" />
+=======
+<<<<<<< HEAD
+    <Reference Include="System.IO.Compression" />
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -106,6 +163,27 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -125,6 +203,26 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <Reference Include="System.Net.Http">
+    </Reference>
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -175,11 +273,28 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChocolateDetailsController.cs" />
     <Compile Include="Controllers\ChocolateDisplayController.cs" />
     <Compile Include="Controllers\DryFruitDetailsController.cs" />
     <Compile Include="Controllers\DryFruitsDisplayController.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    <Compile Include="Controllers\AccountController.cs" />
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\ChocolateEditController.cs" />
     <Compile Include="Controllers\CombinedController.cs" />
@@ -187,11 +302,28 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductDetailsController.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Controllers\SpiceDetailsController.cs" />
     <Compile Include="Controllers\SpiceDisplayController.cs" />
     <Compile Include="Controllers\SpicesEditController.cs" />
     <Compile Include="Controllers\Stock.cs" />
     <Compile Include="Controllers\TableController.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <Compile Include="Controllers\SpicesEditController.cs" />
+    <Compile Include="Controllers\Stock.cs" />
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -201,6 +333,13 @@
     <Compile Include="Models\CombinedViewModel.cs" />
     <Compile Include="Models\DryFruits.cs" />
     <Compile Include="Models\EditUserViewModel.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Models\ForgotPasswordViewModel.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
@@ -211,10 +350,94 @@
     <Compile Include="Models\TableCreateModel.cs" />
     <Compile Include="Models\TableDetail.cs" />
     <Compile Include="Models\TableImage.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Product.cs" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChocolateEditController.cs" />
+    <Compile Include="Controllers\DryFruitEditController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Controllers\SpicesEditController.cs" />
+    <Compile Include="Controllers\Stock.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+=======
+=======
+<<<<<<< HEAD
+    <Compile Include="Controllers\AccountController.cs" />
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+    <Compile Include="Controllers\ChocolateEditController.cs" />
+    <Compile Include="Controllers\DryFruitEditController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+    <Compile Include="Controllers\SpicesEditController.cs" />
+    <Compile Include="Controllers\Stock.cs" />
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Chocolate.cs" />
+    <Compile Include="Models\CombinedViewModel.cs" />
+    <Compile Include="Models\DryFruits.cs" />
+<<<<<<< HEAD
+    <Compile Include="Models\EditUserViewModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+    <Compile Include="Models\Spices.cs" />
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDetailsViewModel.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\VerifyOtpViewModel.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Spices.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\VerifyOtpViewModel.cs" />
+=======
+<<<<<<< HEAD
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Spices.cs" />
+    <Compile Include="Models\User.cs" />
+=======
+    <Compile Include="Models\Spices.cs" />
+=======
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -265,7 +488,178 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Home\ddryfruitsandspices.cshtml" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Home\ddryfruitsandspices.cshtml" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Home\ddryfruitsandspices.cshtml" />
+    <Content Include="Views\Home\stock2.cshtml" />
+    <Content Include="Views\Home\ADDSPICES.cshtml" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ddryfruitsandspices.cshtml" />
+    <Content Include="Views\Home\dryfruits.cshtml" />
+    <Content Include="Views\Home\DRYFRUITSCHOCOLATES.cshtml" />
+=======
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ddryfruitsandspices.cshtml" />
+    <Content Include="Views\Home\dryfruits.cshtml" />
+    <Content Include="Views\Home\spices.cshtml" />
+    <Content Include="Views\Home\DRYFRUITSCHOCOLATES.cshtml" />
+    <Content Include="Views\Home\SAVEPAGE.cshtml" />
+    <Content Include="Views\Home\adddryfruits.cshtml" />
+    <Content Include="Views\Home\EDITPAGE.cshtml" />
+    <Content Include="Views\Home\delete.cshtml" />
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+    <Content Include="Views\Home\ccashews.cshtml" />
+    <Content Include="Views\Home\calmonds.cshtml" />
+    <Content Include="Views\Home\cdriedplums.cshtml" />
+    <Content Include="Views\Home\cdriedanjeer.cshtml" />
+    <Content Include="Views\Home\cdriedstrawberries.cshtml" />
+    <Content Include="Views\Home\capricot.cshtml" />
+    <Content Include="Views\Home\cdriedkiwi.cshtml" />
+    <Content Include="Views\Home\cdriedamla.cshtml" />
+    <Content Include="Views\Home\cdriedcherry.cshtml" />
+    <Content Include="Views\Home\cdriedbluberries.cshtml" />
+    <Content Include="Views\Home\csaltedcashews.cshtml" />
+    <Content Include="Views\Home\cdriedcranberries.cshtml" />
+    <Content Include="Views\Home\cpistachios.cshtml" />
+    <Content Include="Views\Home\cdriedblackberry.cshtml" />
+    <Content Include="Views\Home\craisins.cshtml" />
+    <Content Include="Views\Home\cdates.cshtml" />
+    <Content Include="Views\Home\cdriedoranges.cshtml" />
+    <Content Include="Views\Home\cdriedmango.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Home\stock2.cshtml" />
+=======
+    <Content Include="Views\Home\profile.cshtml" />
+    <Content Include="Views\Home\settings.cshtml" />
+    <Content Include="Views\Home\adminpage.cshtml" />
+    <Content Include="Views\Home\stock2.cshtml" />
+    <Content Include="Views\Home\stock.cshtml" />
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+    <Content Include="Views\Home\cturmericpowder.cshtml" />
+    <Content Include="Views\Home\celachi.cshtml" />
+    <Content Include="Views\Home\cblackpepper.cshtml" />
+    <Content Include="Views\Home\cmustardseeds.cshtml" />
+    <Content Include="Views\Home\ccloves.cshtml" />
+    <Content Include="Views\Home\ccinnamon.cshtml" />
+    <Content Include="Views\Home\ccoriander.cshtml" />
+    <Content Include="Views\Home\ccuminseeds.cshtml" />
+    <Content Include="Views\Home\csaffron.cshtml" />
+    <Content Include="Views\Home\cbayleaf.cshtml" />
+    <Content Include="Views\Home\cyellowmustard.cshtml" />
+    <Content Include="Views\Home\cnutmeg.cshtml" />
+    <Content Include="Views\Home\cmace.cshtml" />
+    <Content Include="Views\Home\cstaranice.cshtml" />
+    <Content Include="Views\Home\cchillipowder.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Home\ADDSPICES.cshtml" />
+=======
+    <Content Include="Views\Home\savepage2.cshtml" />
+    <Content Include="Views\Home\ADDSPICES.cshtml" />
+    <Content Include="Views\Home\SAVEPAGE3.cshtml" />
+    <Content Include="Views\Home\ADDCHOCOLATES.cshtml" />
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+    <Content Include="Views\Home\cchocolatewithalmond.cshtml" />
+    <Content Include="Views\Home\chazelnutmilkchocolate.cshtml" />
+    <Content Include="Views\Home\ccoconutchocolate.cshtml" />
+    <Content Include="Views\Home\cdateschocolate.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+    <Content Include="Views\Home\Combinedpage.cshtml" />
+    <Content Include="Views\Home\cashews.cshtml" />
+    <Content Include="Views\Home\almonds.cshtml" />
+    <Content Include="Views\Home\CASHEWSCART.cshtml" />
+    <Content Include="Views\Home\orderplaced.cshtml" />
+    <Content Include="Views\Home\ALMONDSCART.cshtml" />
+    <Content Include="Views\Home\DRIEDPLUMS.cshtml" />
+    <Content Include="Views\Home\DRIEDPLUMSCART.cshtml" />
+    <Content Include="Views\Home\DRIEDANJEER.cshtml" />
+    <Content Include="Views\Home\DRIEDANJEERCART.cshtml" />
+    <Content Include="Views\Home\DRIEDSTRAWBERRIES.cshtml" />
+    <Content Include="Views\Home\DRIEDSTRAWBERRIESCART.cshtml" />
+    <Content Include="Views\Home\APRICOT.cshtml" />
+    <Content Include="Views\Home\APRICOTCART.cshtml" />
+    <Content Include="Views\Home\DRIEDKIWI.cshtml" />
+    <Content Include="Views\Home\DRIEDKIWICART.cshtml" />
+    <Content Include="Views\Home\DRIEDAMLA.cshtml" />
+    <Content Include="Views\Home\DRIEDAMLACART.cshtml" />
+    <Content Include="Views\Home\DRIEDCHERRY.cshtml" />
+    <Content Include="Views\Home\DRIEDCHERRYCART.cshtml" />
+    <Content Include="Views\Home\DRIEDBLUEBERRIES.cshtml" />
+    <Content Include="Views\Home\DRIEDBLUEBERRIESCART.cshtml" />
+    <Content Include="Views\Home\SALTEDCASHEWS.cshtml" />
+    <Content Include="Views\Home\SALTEDCASHEWSCART.cshtml" />
+    <Content Include="Views\Home\DRIEDCRANBERRIES.cshtml" />
+    <Content Include="Views\Home\DRIEDCRANBERRIESCART.cshtml" />
+    <Content Include="Views\Home\PISTACHIOS.cshtml" />
+    <Content Include="Views\Home\PISTACHIOSCART.cshtml" />
+    <Content Include="Views\Home\DRIEDBLACKBERRY.cshtml" />
+    <Content Include="Views\Home\DRIEDBLACKBERRYCART.cshtml" />
+    <Content Include="Views\Home\raisins.cshtml" />
+    <Content Include="Views\Home\RAISINSCART.cshtml" />
+    <Content Include="Views\Home\dates.cshtml" />
+    <Content Include="Views\Home\DATESCART.cshtml" />
+    <Content Include="Views\Home\DRIEDORANGES.cshtml" />
+    <Content Include="Views\Home\DRIEDORANGESCART.cshtml" />
+    <Content Include="Views\Home\DRIEDMANGOSLICE.cshtml" />
+    <Content Include="Views\Home\DRIEDMANGOSLICECART.cshtml" />
+    <Content Include="Views\Home\turmericpowder.cshtml" />
+    <Content Include="Views\Home\BLACKPEPPER.cshtml" />
+    <Content Include="Views\Home\BLACKPEPPERCART.cshtml" />
+    <Content Include="Views\Home\mustardseeds.cshtml" />
+    <Content Include="Views\Home\MUSTARDSEEDSCART.cshtml" />
+    <Content Include="Views\Home\cloves.cshtml" />
+    <Content Include="Views\Home\CINNAMON.cshtml" />
+    <Content Include="Views\Home\CINNAMONCART.cshtml" />
+    <Content Include="Views\Home\CORIANDER.cshtml" />
+    <Content Include="Views\Home\CORIANDERCART.cshtml" />
+    <Content Include="Views\Home\SAFFRON.cshtml" />
+    <Content Include="Views\Home\SAFFRONCART.cshtml" />
+    <Content Include="Views\Home\BAYLEAF.cshtml" />
+    <Content Include="Views\Home\BAYLEAFCART.cshtml" />
+    <Content Include="Views\Home\YELLOWMUSTARD.cshtml" />
+    <Content Include="Views\Home\YELLOWMUSTARDCART.cshtml" />
+    <Content Include="Views\Home\NUTMEG.cshtml" />
+    <Content Include="Views\Home\NUTMEGCART.cshtml" />
+    <Content Include="Views\Home\MACE.cshtml" />
+    <Content Include="Views\Home\MACECART.cshtml" />
+    <Content Include="Views\Home\STARANICE.cshtml" />
+    <Content Include="Views\Home\CHLLI.cshtml" />
+    <Content Include="Views\Home\CHILLICART.cshtml" />
+    <Content Include="Views\Home\CHOCOLATEWITHALMONDCART.cshtml" />
+    <Content Include="Views\Home\CHOCOLATEWITHALMOND.cshtml" />
+    <Content Include="Views\Home\HAZELNUTCHOCOLATE.cshtml" />
+    <Content Include="Views\Home\HAZELNUTCHOCOLATECART.cshtml" />
+    <Content Include="Views\Home\COCONUTCHOCOLATE.cshtml" />
+    <Content Include="Views\Home\COCONUTCHOCOLATECART.cshtml" />
+    <Content Include="Views\Home\DATESCHOCOLATE.cshtml" />
+    <Content Include="Views\Home\DATESCHOCOLATECART.cshtml" />
+    <Content Include="Views\Home\CUMINSEEDSCART.cshtml" />
+    <Content Include="Views\Home\CUMINSEEDS.cshtml" />
+    <Content Include="Views\Home\elachi.cshtml" />
+    <Content Include="Views\Home\ELACHICART.cshtml" />
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Content Include="Views\DryFruitEdit\Index.cshtml" />
     <Content Include="Views\DryFruitEdit\Create.cshtml" />
     <Content Include="Views\DryFruitEdit\Edit.cshtml" />
@@ -279,20 +673,54 @@
     <Content Include="Views\ChocolateEdit\Edit.cshtml" />
     <Content Include="Views\ChocolateEdit\Delete.cshtml" />
     <Content Include="Views\Stock\Index.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\VerifyOtp.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Login\UserDetails.cshtml" />
     <Content Include="Views\Login\EditUser.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Content Include="Views\Combined\Index.cshtml" />
     <Content Include="Views\ProductDetails\ProductDetails.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
     <Content Include="Views\Home\Payment.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Content Include="Views\Table\ListTables.cshtml" />
     <Content Include="Views\Table\CreateTable.cshtml" />
     <Content Include="Views\Login\ForgotPassword.cshtml" />
     <Content Include="Views\Login\ResetPassword.cshtml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
     <Content Include="Views\ChocolateDetails\Details1.cshtml" />
     <Content Include="Views\ChocolateDisplay\Index.cshtml" />
     <Content Include="Views\DryFruitDetails\Details2.cshtml" />
@@ -300,10 +728,65 @@
     <Content Include="Views\SpiceDetails\Details.cshtml" />
     <Content Include="Views\SpiceDisplay\Index.cshtml" />
     <Content Include="Views\Home\stock2.cshtml" />
+<<<<<<< HEAD
+=======
+=======
+    <Content Include="Views\DryFruitsDisplay\Index.cshtml" />
+    <Content Include="Views\SpiceDisplay\Index.cshtml" />
+    <Content Include="Views\ChocolateDisplay\Index.cshtml" />
+    <Content Include="Views\ChocolateDetails\Details1.cshtml" />
+    <Content Include="Views\DryFruitDetails\Details2.cshtml" />
+    <Content Include="Views\SpiceDetails\Details.cshtml" />
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\CombinedDetails\" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\VerifyOtp.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
