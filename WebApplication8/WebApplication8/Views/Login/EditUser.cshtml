@@ -1,0 +1,176 @@
+﻿@model WebApplication8.Models.EditUserViewModel
+
+@{
+    ViewBag.Title = "Edit User";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D Dry Fruits - Register</title>
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            align-items: center;
+        }
+
+        .login-container {
+            padding: 50px;
+            width: 400px;
+        }
+
+            .login-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+        .form-horizontal {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+            .form-group label {
+                width: 30%;
+                margin-bottom: 0;
+            }
+
+            .form-group div {
+                width: 70%;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="password"],
+            .form-group select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background-color: #4caf50;
+        }
+
+            .btn-primary:hover {
+                background-color: #45a049;
+            }
+
+        .btn-secondary {
+            background-color: #007bff;
+        }
+
+            .btn-secondary:hover {
+                background-color: #0056b3;
+            }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        body {
+            background-image: url('/Content/pexels-photo-1939485.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+        <a href="@Url.Action("ddryfruitsandspices", "Home")">
+            <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" alt="Logo" height="150px" width="400px" />
+
+        </a>
+    </center>
+    <div class="container">
+        <div class="login-container">
+            <h2>@Model.FirstName @Model.LastName</h2>
+
+            @using (Html.BeginForm("EditUser", "Login", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.Email, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.OldPassword, new { @class = "control-label" })
+                    <input type="text" class="form-control" value="********" readonly />
+                    @Html.ValidationMessageFor(m => m.OldPassword, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.NewPassword, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.NewPassword, new { @class = "form-control", type = "password" })
+                    @Html.ValidationMessageFor(m => m.NewPassword, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Role, new { @class = "control-label" })
+                    @Html.DropDownListFor(m => m.Role, new SelectList(new[] { "Admin", "User" }), "Select Role", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Role, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <div class="radio-group">
+                        <label>
+                            @Html.RadioButtonFor(m => m.Gender, "Male") Male
+                        </label>
+                        <label>
+                            @Html.RadioButtonFor(m => m.Gender, "Female") Female
+                        </label>
+                        <label>
+                            @Html.RadioButtonFor(m => m.Gender, "Other") Other
+                        </label>
+                    </div>
+                    @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <a href="@Url.Action("ddryfruitsandspices", "Home")" class="btn btn-default">Cancel</a>
+                </div>
+            }
+        </div>
+    </div>
+    <script src="~/Scripts/valid.js"></script>
+</body>
+</html>
