@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@using (Html.BeginForm("CreateTable", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div>
@@ -22,4 +23,31 @@
     <div>
         @Html.Raw(ViewBag.Message)
     </div>
+=======
+﻿@model WebApplication8.Models.TableCreateModel
+
+@{
+    ViewBag.Title = "Create Table";
+}
+
+<h2>Create Table</h2>
+
+@using (Html.BeginForm("CreateTable", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TableName)
+        @Html.TextBoxFor(m => m.TableName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TableName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ImageFile, "Table Image")
+        <input type="file" name="ImageFile" class="form-control" />
+        @Html.ValidationMessageFor(m => m.ImageFile)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Table</button>
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
 }

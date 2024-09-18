@@ -1,10 +1,24 @@
 ﻿@model IEnumerable<WebApplication8.Models.TableDetail>
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "List Tables";
 }
 
 <h2>List Tables</h2>
+=======
+    ViewBag.Title = "List of Tables";
+}
+
+<h2>List of Tables</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Message
+    </div>
+}
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
 
 <table class="table">
     <thead>
@@ -21,9 +35,17 @@
                 <td>
                     @if (table.ImageData != null)
                     {
+<<<<<<< HEAD
                         <a href="@Url.Action("AddData", "Table", new { tableName = table.TableName })">
                             <img src="@Url.Action("GetImage", "Table", new { tableName = table.TableName })" alt="Table Image" style="width: 100px; height: 100px;" />
                         </a>
+=======
+                        <img src="@Url.Action("GetImage", new { tableName = table.TableName })" alt="@table.TableName" style="width: 100px; height: 100px;" />
+                    }
+                    else
+                    {
+                        <span>No image available</span>
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
                     }
                 </td>
             </tr>

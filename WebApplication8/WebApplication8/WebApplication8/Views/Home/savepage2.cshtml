@@ -1,0 +1,440 @@
+﻿
+@{
+    ViewBag.Title = "savepage2";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="SWITCH"></div>
+    <a href="ADDSPICES">
+        <button class="add-button">ADD</button>
+    </a>
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="profile"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="ddryfruitsandspices"> <button onclick="myFunction()">HOME</button></a>
+            <a href="settings"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="adminpage"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 2px solid black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: CENTER;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .fa-cart-shopping {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .add-button {
+        float: right;
+        position: absolute;
+        right: 280px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        width: 38px;
+        font-size: 14px;
+        top: 70px;
+        padding: 1PX;
+        background-color: white;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+        .button-container a {
+            margin-right: 10px;
+        }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+</style>
+<body>
+    <center>
+        <a>
+            <a href="ddryfruitsandspices">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+    </center>
+    <CENTER>
+        <h2>SPICES</h2>
+
+        <table>
+            <tr>
+                <th>ITEM NAME</th>
+                <th>IMAGE</th>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><h3>TURMERIC POWDER</h3></td>
+                <td><img src="/Content/turmeric-powder-extract-curcumin-95-hplc-1000x1000.jpg" height="200px" width="250px"></td>
+                <td>
+                    <br>  <br> Inflammation  </br>
+                    <br> Degenerative eye conditions  </br>
+                    <br>  Hyperlipidemia (cholesterol in the blood) </br>
+                    <br> Muscle soreness after exercise</br>
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>ELACHI</h3></td>
+                <td><img src="/Content/51mBsFX3OzL._SX300_SY300_QL70_FMwebp_.JPG" height="200px" width="250px"></td>
+                <td>
+                    <br>Improve digestive health  </br>
+                    <br>Used to treat nausea and vomiting. </br>
+                    <br>Control blood sugar level </br>.
+                    <br>Help in nicotine withdrawal</br>
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>BLACK PEPPER</h3></td>
+                <td><img src="/Content/BLACKPEPPER.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>High in antioxidants</br>
+                    <br> Has anti-inflammatory properties</br>
+                    <br> May benefit your brain</br>
+                    <br>May improve blood sugar control
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>MUSTARD SEEDS</h3></td>
+                <td><img src="/Content/mustardseeds_560x560.JPG" height="200px" width="250px"></td>
+                <td>
+                    <br>It may reduce inflammation. </br>
+                    <br> It may act against cancer. </br>
+                    <br>Selenium is a mineral that enhances bone density and tooth enamel strength. </br>
+                    <br> Mustard seeds provide anti-ageing effects through vitamins A, C, and K.
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>CLOVES</h3>
+                <td><img src="~/Content/Cloves.PNG" height="200px" width="250px"></td>
+                <td>
+                    <br>Clove oil is perhaps best known as a remedy for toothache and dental pain.  </br>
+                    <br>Cloves are best for people with high blood sugar levels.  </br>
+                    <br>Cloves are best used for easing flatulence, gastric irritability, dyspepsia, and nausea.  </br>
+                    <br>People with weak bones and osteoporosis are benefitted from taking cloves regularly.
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>CINNAMON</h3></td>
+                <td><img src="/Content/CINNAMON.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Contains powerful medicinal properties</br>
+                    <br>May have anti-inflammatory properties</br>
+                    <br>  Could protect against heart disease</br>
+                    <br> May have beneficial effects on neurodegenerative diseases
+                </td>
+                <td>Rs.50</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>CORIANDER</h3></td>
+                <td><img src="/Content/CORIANDER POWDER.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Rich in immune-boosting antioxidants </br>
+                    <br>May have anti-inflammatory properties</br>
+                    <br>  C May promote digestion and gut health</br>
+                    <br> Its antioxidants have been shown to fight inflammation in your body
+                </td>
+                <td>Rs.400</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>CUMIN SEEDS</h3></td>
+                <td><img src="/Content/CUMIN SEEDS.JPG" height="200px" width="250px"></td>
+                <td>
+                    <br>   <BR>Is a Rich Source of Iron</br>
+                    <br>Contains Beneficial Plant Compounds</br>
+                    <br> May Help With Diabetes</br>
+                    <br> May Promote Weight Loss and Fat Reduction
+                    </br>
+                </td>
+                <td>Rs.400</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>SAFFRON</h3></td>
+                <td><img src="/Content/SAFFRON.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>May improve mood and treat depressive symptomss</BR>
+                    <br> May have cancer-fighting properties</BR>
+                    <br>  May reduce appetite and aid weight losss</BR>
+                    <br>Saffron is generally safe with little to no side effects.
+                </td>
+                <td>RS.312</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>BAY LEAF</h3></td>
+                <td><img src="/Content/BAY LEAF.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Compounds found in bay leaves have been shown to help regulate blood sugar levels.  </br>
+                    <br> Bay leaves contain phytonutrients and antioxidants with anti-inflammatory properties. </br>
+                    <br> Reduces Inflammation and Enhances Wound Healing </br>
+                    <br> Increases body metabolism and helps promote weight loss.
+                </td>
+                <td>Rs.225</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>YELLOW MUSTARD</h3></td>
+                <td><img src="/Content/YELLOW MUSTARD.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>Yellow mustard seeds are a very good source of fibre, protein, calcium, iron</br>
+                    <br>The selenium and omega-3 fatty acids in these seeds are very good for your health</br>
+                    <br>Mustard seeds protect against Gastrointestinal Cancer </br>
+                    <br>Mustard seeds are very helpful for people who get migraines often.
+                </td>
+                <td>Rs.65</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>NUTMEG</h3></td>
+                <td><img src="/Content/NUTMEG.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>It is essential to consume nutmeg in moderation as an excess of it can lead to delirium</br>
+                    <br>It can be found in whole-seed form but is most often sold as a ground spice.</br>
+                    <br>It has a warm, slightly nutty flavor and is often used in desserts and curries.</br>
+                    <br>Antioxidants neutralize free radicals, preventing cellular damage and keeping your free radical levels in check.
+                </td>
+                <td>Rs.300</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>MACE</h3></td>
+                <td><img src="/Content/MACE.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>It is essential to consume nutmeg in moderation as an excess of it can lead to delirium </br>
+                    <br>It can be found in whole-seed form but is most often sold as a ground spice. </br>
+                    <br>It has a warm, slightly nutty flavor and is often used in desserts and curries. </br>
+                    <br>Antioxidants neutralize free radicals, preventing cellular damage and keeping your free radical levels in check.
+                </td>
+                <td>Rs.800</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>STAR ANICE</h3></td>
+                <td><img src="/Content/Star-Anise.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>It may be an anti-microbial. </br>
+                    <br>It may act as an analgesic (relieves pain) </br>
+                    <br>It may act like a sedative (induces sleep) </br>
+                    <br>It may act as an anti-diarrhoeal.
+                </td>
+                <td>Rs.1200</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>CHILLI POWDER</h3></td>
+                <td><img src="/Content/CHILLI.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>It is common knowledge that red chilli powder aids in weight loss.</br>
+                    <br> One teaspoon of red chilli powder has 9% of your RDA (requisite daily amount) of vitamin A in it</br>
+                    <br> Red chillies are high in potassium, and so is their powder.</br>
+                    <br> It also reduces harmful bacteria in your gut, keeping intestines healthy.
+                </td>
+                <td>Rs.110</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>

@@ -127,16 +127,53 @@
                 <div class="profile-icon">
                     <i class="fas fa-user-circle fa-2x"></i>
                     <div class="profile-dropdown">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
                         <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
                         <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
                         <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
                         <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">LOG OUT</button></a>
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+                        <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+                        <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+                        <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+                        <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+                        <a href="@Url.Action("EditUser", "Login")"> <button onclick="myFunction()">PROFILE</button></a>
+                        <a href="@Url.Action("ddryfruitsandspices", "Home")"> <button onclick="myFunction()">HOME</button></a>
+                        <a href="@Url.Action("UserDetails", "Login")"> <button onclick="myFunction()">SETTINGS</button></a>
+                        <a href="@Url.Action("Login", "Login")"><button onclick="myFunction()">SIGN OUT</button></a>
+<<<<<<< HEAD
+=======
+=======
+                        <a href="@Url.Action("Profile", "Home")">PROFILE</a>
+                        <a href="@Url.Action("ddryfruitsandspices", "Home")">HOME</a>
+                        <a href="@Url.Action("Settings", "Home")">SETTINGS</a>
+                        <a href="@Url.Action("SignOut", "Home")">SIGN OUT</a>
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <p></p>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
     <div align="" font-size="bold">
         <h2>Dry Fruit Delete</h2>
         <dl class="dl-horizontal">
@@ -182,20 +219,93 @@
                 </b>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<<<<<<< HEAD
+=======
+=======
+    <div align="center" font-size="bold">
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ImageName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+                @Html.DisplayNameFor(model => model.ShortStory)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShortStory)
+            </dd>
+            <dt>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageFile)
+            </dt>
+            <dd>
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
                 @if (Model.ImagePath != null)
                 {
                     <img src="@Model.ImagePath" width="100" />
                 }
+<<<<<<< HEAD
             </dt>
         </dl>
         <p></p>
+=======
+<<<<<<< HEAD
+            </dt>
+        </dl>
+        <p></p>
+=======
+            </dd>
+        </dl>
+
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
         @using (Html.BeginForm("Delete", "DryFruitEdit", FormMethod.Post))
         {
             @Html.AntiForgeryToken()
             @Html.HiddenFor(model => model.ImageName)
             <div class="form-actions">
+<<<<<<< HEAD
                 <input type="submit" value="Delete" class="btn btn-danger" /> 
                 <button> @Html.ActionLink("Back to List", "Index")</button>
+=======
+<<<<<<< HEAD
+                <input type="submit" value="Delete" class="btn btn-danger" /> 
+                <button> @Html.ActionLink("Back to List", "Index")</button>
+=======
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index")
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
             </div>
         }
     </div>
