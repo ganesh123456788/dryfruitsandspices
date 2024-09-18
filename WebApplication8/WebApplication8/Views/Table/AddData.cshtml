@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebApplication8.Models.ProductNameModel>
+
+@{
+    ViewBag.Title = "Add Data";
+}
+
+<h2>Add Data</h2>
+
+@using (Html.BeginForm("AddData", "Table", FormMethod.Post))
+{
+    <input type="hidden" name="tableName" value="@ViewBag.TableName" />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Image Name</th>
+                <th>Image Path</th>
+                <th>Short Story</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                <tr>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).ProductName)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).Quantity)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).ImageName)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).ImagePath)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).ShortStory)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).Description)</td>
+                    <td>@Html.TextBoxFor(m => Model.ElementAt(i).Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-primary">Add Data</button>
+}

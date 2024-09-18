@@ -1,0 +1,25 @@
+﻿@using (Html.BeginForm("CreateTable", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <label>Table Name:</label>
+        <input type="text" name="tableName" required />
+    </div>
+
+    <div>
+        <label>Columns (e.g. Id INT PRIMARY KEY, Name NVARCHAR(50)):</label>
+        <input type="text" name="columns" required />
+    </div>
+
+    <div>
+        <label>Upload Table Photo:</label>
+        <input type="file" name="imageFile" accept="image/*" />
+    </div>
+
+    <div>
+        <button type="submit">Create Table</button>
+    </div>
+
+    <div>
+        @Html.Raw(ViewBag.Message)
+    </div>
+}
