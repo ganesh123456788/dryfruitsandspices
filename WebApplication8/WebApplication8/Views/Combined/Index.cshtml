@@ -1,0 +1,261 @@
+﻿@model IEnumerable<WebApplication8.Controllers.CombinedController.ProductDetailViewModel>
+@{
+    ViewBag.Title = "Combined Spices";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combined Spices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-image: url('/Content/pexels-photo-1939485.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header-icons {
+            position: relative;
+            float: right;
+            margin-top: 70px;
+            margin-right: 20px;
+        }
+        .fa-cart-shopping {
+            font-size: 30px;
+            margin-right: 100px;
+            display: inline-block;
+        }
+        .profile-icon {
+            position: relative;
+            display: inline-block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px 20px;
+            width: 200px;
+            border: 1px solid #070202;
+            top: 40px;
+            right: 0;
+            z-index: 1000;
+        }
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+        .profile-dropdown button {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            background-color: #f4f4f4;
+            cursor: pointer;
+        }
+            .profile-dropdown button:hover {
+                background-color: #ddd;
+            }
+        .filter-container {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            z-index: 1000;
+        }
+        .filter-container1 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 1000;
+        }
+        .filter-icon {
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .filter-dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #070202;
+            top: 40px;
+            left: 0;
+            z-index: 1000;
+        }
+            .filter-icon:hover + .filter-dropdown,
+            .filter-dropdown:hover {
+                display: block;
+            }
+            .filter-dropdown a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+            .filter-dropdown button {
+                width: 100%;
+                padding: 10px 0;
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+                background-color: #f4f4f4;
+                cursor: pointer;
+            }
+                .filter-dropdown button:hover {
+                    background-color: #ddd;
+                }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            justify-items: center;
+            align-items: center;
+            max-width: 100%;
+            padding: 20px;
+        }
+        .grid-item {
+            text-align: center;
+            position: relative;
+        }
+            .grid-item img {
+                width: 100%;
+                max-width: 150px;
+                height: auto;
+                border-radius: 8px;
+            }
+        .sort-links {
+            margin: 20px;
+            font-size: 16px;
+        }
+        .image {
+            height ="200px" ;
+            width="200px";
+        }
+        .grid-item {
+            text-align: center;
+            position: relative;
+            width: 200px; /* Set fixed width */
+            height: 250px; /* Set fixed height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden; /* Ensure content does not overflow */
+            background-color: transparent;
+        }
+        .grid-item img {
+            width: 100%; /* Make image fit the container */
+            height: 100%; /* Ensure image takes full height */
+            object-fit: cover; /* Crop the image */
+            max-height: 100px; /* Fixed height */
+            border-radius: 4px; /* Optional: rounded corners */
+        }
+        .badge {
+            position: absolute;
+            top: -25px;
+            right: 90px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .highlight {
+            background-color: #d4edda;
+        }
+        input {
+            padding: 5px;
+            font-size: 12px;
+            position: absolute;
+            top: 99px;
+            left:900px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-icons">
+            <a href="@Url.Action("Index", "ShoppingCart")" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping">
+                    <span class="badge">
+                        @if (Session["Cart"] != null)
+                        {
+                            var cart = (List<ShoppingCartApp.Controllers.ShoppingCartController.CartItem>)Session["Cart"];
+                            @cart.Sum(i => i.Quantity)
+                        }
+                        else
+                        {
+                            @:0
+                        }
+                    </span>
+                </i>
+            </a>
+            <div class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+                <div class="profile-dropdown">
+                    <a href="@Url.Action("EditUser", "Login")"><button>PROFILE</button></a>
+                    <a href="@Url.Action("Index")"><button>HOME</button></a>
+                    <a href="@Url.Action("EditUser", "Login")"><button>SETTINGS</button></a>
+                    <a href="@Url.Action("Login", "Login")"><button>LOG OUT</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <i class="fas fa-filter filter-icon"></i>
+            <div class="filter-dropdown">
+                <a href="@Url.Action("Index", new { filter = "DryFruits" })"><button>Dry Fruits</button></a>
+                <a href="@Url.Action("Index", new { filter = "Spices" })"><button>Spices</button></a>
+                <a href="@Url.Action("Index", new { filter = "Chocolate" })"><button>Chocolate</button></a>
+            </div>
+        </div>
+        <div class="sort-links">
+            <div class="filter-container1">
+                <i class="fas fa-filter filter-icon"></i>
+                <div class="filter-dropdown">
+                    <a href="@Url.Action("Index", new { query = ViewBag.SearchQuery, filter = ViewBag.Filter, sort = "asc" })"><button>Low to High</button></a>
+                    <a href="@Url.Action("Index", new { query = ViewBag.SearchQuery, filter = ViewBag.Filter, sort = "desc" })"><button>High to Low</button></a>
+                </div>
+            </div>
+        </div>
+        <form method="get" action="@Url.Action("Index")" style="margin: 20px;">
+            <input type="text" name="query" value="@ViewBag.SearchQuery" placeholder="Search..." />
+        </form>
+    </header>
+    <center>
+        <a href="@Url.Action("Index")">
+            <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px" alt="Banner Image">
+        </a>
+    </center>
+    <div class="grid-container">
+        @foreach (var item in Model)
+        {
+            <div class="grid-item @(ViewBag.SearchQuery != null &&
+                                    (item.ImageName.IndexOf(ViewBag.SearchQuery, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                     item.Description.IndexOf(ViewBag.SearchQuery, StringComparison.OrdinalIgnoreCase) >= 0)
+                                    ? "highlight" : "")">
+                <img src="@(!string.IsNullOrEmpty(item.ImagePath) ? Url.Content(item.ImagePath) : "/Content/default-image.jpg")"
+                     alt="@item.ImageName"
+                     onclick="window.location.href='@Url.Action("GetProductDetails", "ProductDetails", new { imageName = item.ImageName, productType = item.ProductType })'" />
+                <h3 class="image">@item.ImageName </h3>
+                <h3>@item.ShortStory</h3>
+                <h3 style="text-align: center;">Price: @item.Price /-</h3>
+            </div>
+        }
+    </div>
+</body>
+</html>

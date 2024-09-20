@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication8.Models.TableDetail>
+
+@{
+    ViewBag.Title = "List Tables";
+}
+
+<h2>List Tables</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Table Name</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var table in Model)
+        {
+            <tr>
+                <td>@table.TableName</td>
+                <td>
+                    @if (table.ImageData != null)
+                    {
+                        <a href="@Url.Action("AddData", "Table", new { tableName = table.TableName })">
+                            <img src="@Url.Action("GetImage", "Table", new { tableName = table.TableName })" alt="Table Image" style="width: 100px; height: 100px;" />
+                        </a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

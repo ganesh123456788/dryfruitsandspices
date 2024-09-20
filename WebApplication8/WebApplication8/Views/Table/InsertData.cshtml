@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Insert Data";
+    Layout = null;
+}
+
+<h2>Insert Data</h2>
+
+@using (Html.BeginForm("InsertData", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <label for="tableName">Select Table:</label>
+        <select id="tableName" name="tableName" required>
+            <option value="">-- Select a Table --</option>
+            @foreach (var table in ViewBag.Tables)
+            {
+                <option value="@table">@table</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label>Description:</label>
+        <input type="text" name="Description" required />
+    </div>
+    <div>
+        <label>Image Name:</label>
+        <input type="text" name="imageName" required />
+    </div>
+    <div>
+        <label>Price:</label>
+        <input type="number" name="price" step="0.01" required />
+    </div>
+
+    if (ViewBag.Columns != null)
+    {
+        foreach (var column in ViewBag.Columns)
+        {
+            <div>
+                <label for="@("col_" + column.ColumnName)">@column.ColumnName:</label>
+                <input type="text" id="@("col_" + column.ColumnName)" name="@("col_" + column.ColumnName)" />
+            </div>
+        }
+    }
+
+    <div>
+        <label>Upload Image:</label>
+        <input type="file" name="imageFile" />
+    </div>
+
+    <input type="submit" value="Insert Data" />
+}
+
+@if (ViewBag.Message != null)
+{
+    <div>@ViewBag.Message</div>
+}

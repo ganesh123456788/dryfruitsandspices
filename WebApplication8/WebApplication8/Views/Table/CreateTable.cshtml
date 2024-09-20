@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Create Table";
+    Layout = null;
+}
+
+<h2>Create Table</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <label>Table Name:</label>
+        @Html.TextBox("tableName")
+    </div>
+    <div>
+        <label>Columns (comma-separated):</label>
+        @Html.TextBox("columns")
+    </div>
+    <div>
+        <label>Image File:</label>
+        <input type="file" name="imageFile" />
+    </div>
+    <input type="submit" value="Create Table" />
+}
+
+@if (ViewBag.Message != null)
+{
+    <div>@ViewBag.Message</div>
+}

@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\webapplication8\\views\\table\\createtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\table\\createtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|f:\\git push\\new folder\\new folder (3)\\webapplication8\\webapplication8\\views\\table\\insertdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\table\\insertdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\webapplication8\\models\\columninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\columninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\webapplication8\\models\\tablewithimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\models\\tablewithimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\webapplication8\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5BD04A-C5C6-4B36-9383-CF4EAE8AEA3C}|WebApplication8\\WebApplication8.csproj|solutionrelative:webapplication8\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InsertData.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Table\\InsertData.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Table\\InsertData.cshtml",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Table\\InsertData.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Table\\InsertData.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T13:27:15.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateTable.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Table\\CreateTable.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Table\\CreateTable.cshtml",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Table\\CreateTable.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Table\\CreateTable.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T13:26:38.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ColumnInfo.cs",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Models\\ColumnInfo.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\ColumnInfo.cs",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Models\\ColumnInfo.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\ColumnInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:26:07.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableWithImage.cs",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Models\\TableWithImage.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Models\\TableWithImage.cs",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Models\\TableWithImage.cs",
+              "RelativeToolTip": "WebApplication8\\Models\\TableWithImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:25:42.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TableController.cs",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Controllers\\TableController.cs",
+              "RelativeDocumentMoniker": "WebApplication8\\Controllers\\TableController.cs",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Controllers\\TableController.cs",
+              "RelativeToolTip": "WebApplication8\\Controllers\\TableController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T13:22:05.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ToolTip": "F:\\GIT Push\\New folder\\New folder (3)\\WebApplication8\\WebApplication8\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "WebApplication8\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAAFsBAAAAAAAAAAAswGcBAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T04:30:55.918Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
