@@ -1,0 +1,27 @@
+In web.Config file :
+Login to Gmail 
+1. Use your Email : 	 <add key="Email" value="**********@gmail.com" />
+
+2. For Creating Password
+	1. Click on profile
+	2. Click on Manage your Google Account
+	3. Click on Security
+	4. Click on 2-Step Verification
+	5. Click on Continue
+	6. It will ask to choose your device
+	7. Type Password of your Device
+	8. Click on Add Passkey
+	9. Click on Create passkey
+	10. Again it will ask your Device Password
+	11. Again go to Google Account Main page
+	12. Type 'App Passwords' in search bar
+	13. Create an App Name and click on create 
+	14. Copy your App Password (**** **** **** ****) and remove all gaps 
+	15. Mention that App password = <add key="Password" value="************" /> in web.config file
+
+3. In web.config file <add key="SMTPServer" value="smtp.gmail.com" /> if your are using gmail 
+if you are using yahoo mail add <add key="SMTPServer" value="smtp.yahoo.com" />
+If you are using hotmail add <add key="SMTPServer" value="smtp.hotmail.com" />
+
+4. Create a SQL Database in your SQL Server Management Studio and instead of "Server=DESKTOP-5M6SBGL" Replace the 'DESKTOP-5M6SBGL' with your system name
+

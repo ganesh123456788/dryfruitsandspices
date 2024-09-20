@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "SAVEPAGE3";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D Dry Fruits </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <div class="SWITCH"></div>
+    <a href="ADDCHOCOLATES">
+        <button class="add-button">ADD</button>
+    </a>
+</head>
+<header>
+    <div class="profile-icon">
+        <i class="fas fa-user-circle"></i>
+        <div class="profile-dropdown">
+            <a href="profile"> <button onclick="myFunction()">PROFILE</button></a>
+            <a href="ddryfruitsandspices"> <button onclick="myFunction()">HOME</button></a>
+            <a href="settings"> <button onclick="myFunction()">SETTINGS</button></a>
+            <a href="adminpage"><button onclick="myFunction()">SIGN OUT</button></a>
+        </div>
+    </div>
+</header>
+<style>
+    body {
+        background-image: url('/Content/pexels-photo-1939485.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 2px solid black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: CENTER;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .fa-cart-shopping {
+        float: right;
+        position: absolute;
+        right: 100px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .fa-plus {
+        float: right;
+        position: absolute;
+        right: 250px;
+        margin-left: 10px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    .profile-dropdown button {
+        width: 110%;
+        padding: 4px 0;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        font-size: 100%;
+        padding: 10px 20px;
+        width: 60%;
+        size: 100%;
+        border: 1px solid #070202;
+    }
+
+    .add-button {
+        float: right;
+        position: absolute;
+        right: 280px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        width: 38px;
+        font-size: 14px;
+        top: 70px;
+        padding: 1PX;
+        background-color: white;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+        .button-container a {
+            margin-right: 10px;
+        }
+
+    .profile-settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        float: right;
+        position: absolute;
+        right: 10px;
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+
+</style>
+<body>
+    <center>
+        <a>
+            <a href="ddryfruitsandspices">
+                <img src="/Content/ganeshdevops.jpeg-removebg-preview.png" height="150px" width="400px">
+            </a>
+    </center>
+    <CENTER>
+        <h2>DRY FRUIT CHOCOLATES</h2>
+        <table>
+            <tr>
+                <th>ITEM NAME</th>
+                <th>IMAGE</th>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><h3>ALMOND CHOCOLATE</h3></td>
+                <td><img src="/Content/ALMOND CHOCOLATE.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>Almonds and chocolate have health benefits such as lowering blood sugar, blood pressure, cholesterol and lowering hunger </br>
+                    <br> Almonds can lend a healthy halo to chocolate products</br>
+                    <br> The combination of these factors equates to a lower risk for heart disease.</br>
+                    <br>  Almond butter is a top filling/flavor included in surveyed consumers ideal chocolate products.
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>HAZEL NUT CHOCOLATE</h3></td>
+                <td><img src="/Content/HAZELNUT  CHOCOLATE.JPG" height="200px" width="250px"></td>
+                <td>
+                    <BR>Linked With Lower Rates of Cancer</br>
+                    <br>  May Help Lower Blood Sugar Levels</br>
+                    <br> Although they are high in calories, they are loaded with nutrients and healthy fats.</br>
+                    <br>However, hazelnuts contain phytic acid,like iron and zinc, from the nuts
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>COCONUT CHOCOLATE</h3></td>
+                <td><img src="/Content/coconut1-200x200.jpg" height="200px" width="250px"></td>
+                <td>
+                    <BR>Eating coconuts are excellent for ones immunity.</br>
+                    <br> They are antiviral, antifungal, antibacterial, and anti-parasitic </br>
+                    <br>it can help treat some of mankind’s worst of illnesses such as influenza, throat infections, urinary tract infections</br>
+                    <br>  Its antioxidant properties slow down the aging process by protecting the body from harmful free radicals
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>DATES CHOCOLATE</h3></td>
+                <td><img src="/Content/DATES CHOCOLATES.jpg" height="200px" width="250px"></td>
+                <td>
+                    Dates are easy to digest, Stimulate the urine, clean the kidneys and are useful to the liver </br>
+                    <br> TDates are good appetizers.</br>
+                    <br>it can help treat some of mankind’s worst of illnesses such as influenza, throat infections, urinary tract infections</br>
+                    <br>Dates contain phosphor there for it increases male fertility and enhances sexual strength
+                </td>
+                <td>Rs.199</td>
+                <td>
+                    <div class="button-container">
+                        <a href="EDITPAGE" class="button">EDIT</a>
+                        <a href="delete" class="button">DELETE</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>

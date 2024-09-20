@@ -1,33 +1,123 @@
 ﻿using System;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Web.Mvc;
 using WebApplication8.Models;
 using BCrypt.Net;
 using System.Configuration;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Web.Mvc;
+using WebApplication8.Models;
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 
 namespace WebApplication8.Controllers
 {
     public class LoginController : Controller
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         private string GetConnectionString()
         {
             return ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
         }
 
         // GET: Login
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         [HttpGet]
         public ActionResult Login()
         {
             return View();
         }
 
+<<<<<<< HEAD
         // POST: Login
+=======
+<<<<<<< HEAD
+        // POST: Login
+=======
+<<<<<<< HEAD
+        // POST: Login
+=======
+<<<<<<< HEAD
+        // POST: Login
+=======
+<<<<<<< HEAD
+        // POST: Login
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -72,6 +162,69 @@ namespace WebApplication8.Controllers
                                     else
                                     {
                                         ModelState.AddModelError("", "Invalid email or password.");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT Password, Role FROM UserRegistrationDB WHERE Email = @Email";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", model.Email);
+
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string storedHashedPassword = reader["Password"].ToString();
+                                string role = reader["Role"].ToString();
+
+                                // Verify the provided password
+                                if (BCrypt.Net.BCrypt.Verify(model.Password, storedHashedPassword))
+                                {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    // Store user details in TempData
+                                    TempData["Email"] = model.Email;
+                                    TempData["Password"] = model.Password;
+                                    TempData["Role"] = role;
+
+<<<<<<< HEAD
+=======
+=======
+                                    // Redirect based on role
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    if (role.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        return RedirectToAction("ddryfruitsandspices", "Home");
+                                    }
+                                    else if (role.Equals("user", StringComparison.OrdinalIgnoreCase))
+                                    {
+<<<<<<< HEAD
+                                        return RedirectToAction("Index", "Combined");
+=======
+                                        return RedirectToAction("adminpage", "Home");
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+                                    }
+                                    else
+                                    {
+                                        ModelState.AddModelError("", "Role is not recognized.");
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                                     }
                                 }
                                 else
@@ -79,6 +232,19 @@ namespace WebApplication8.Controllers
                                     ModelState.AddModelError("", "Invalid email or password.");
                                 }
                             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                         }
                     }
                 }
@@ -138,19 +304,76 @@ namespace WebApplication8.Controllers
                             else
                             {
                                 ModelState.AddModelError("", "Email address not found.");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                            else
+                            {
+                                ModelState.AddModelError("", "Invalid email or password.");
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                             }
                         }
                     }
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                     ModelState.AddModelError("", "An error occurred while processing your request.");
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
             }
 
             return View(model);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 
         private void SendResetEmail(string email, string resetLink)
         {
@@ -252,10 +475,48 @@ namespace WebApplication8.Controllers
             var email = Session["Email"] as string;
 
             if (string.IsNullOrEmpty(email))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+
+        [HttpGet]
+        public ActionResult EditUser()
+        {
+            var email = TempData["Email"] as string;
+
+            if (email == null)
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
             {
                 return RedirectToAction("Login");
             }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
             try
             {
                 using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -286,10 +547,60 @@ namespace WebApplication8.Controllers
                             {
                                 return RedirectToAction("Login");
                             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+            string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Email, Password, Role, DateOfBirth, Gender FROM UserRegistrationDB WHERE Email = @Email";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Email", email);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            var editUserModel = new EditUserViewModel
+                            {
+                                Email = reader["Email"].ToString(),
+                                Password = reader["Password"].ToString(),
+                                Role = reader["Role"].ToString(),
+                                DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
+                                Gender = reader["Gender"].ToString()
+                            };
+
+                            return View(editUserModel);
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                         }
                     }
                 }
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
@@ -298,11 +609,42 @@ namespace WebApplication8.Controllers
         }
 
         // POST: EditUser
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+            return RedirectToAction("Login");
+        }
+
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         [HttpPost]
         public ActionResult EditUser(EditUserViewModel model)
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(GetConnectionString()))
@@ -335,9 +677,65 @@ namespace WebApplication8.Controllers
                     System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                     ModelState.AddModelError("", "An error occurred while updating your details.");
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                string connectionString = ConfigurationManager.ConnectionStrings["SpicesDBConnectionString"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.Password);
+                    string query = "UPDATE UserRegistrationDB SET Email = @Email, Password = @Password, Role = @Role, DateOfBirth = @DateOfBirth, Gender = @Gender WHERE Email = @OldEmail";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", model.Email);
+                        command.Parameters.AddWithValue("@Password", hashedPassword);
+                        command.Parameters.AddWithValue("@Role", model.Role);
+                        command.Parameters.AddWithValue("@DateOfBirth", model.DateOfBirth);
+                        command.Parameters.AddWithValue("@Gender", model.Gender);
+                        command.Parameters.AddWithValue("@OldEmail", TempData["Email"].ToString());
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        // Update TempData with new values
+                        TempData["Email"] = model.Email;
+                        TempData["Password"] = model.Password;
+                        TempData["Role"] = model.Role;
+                        return RedirectToAction("adminpage", "Home");
+                    }
+                }
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
             }
 
             return View(model);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
     }
 }

@@ -1,10 +1,44 @@
+<<<<<<< HEAD
 ﻿@{
     ViewBag.Title = "Create Table";
     Layout = null;
+=======
+<<<<<<< HEAD
+﻿@using (Html.BeginForm("CreateTable", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <label>Table Name:</label>
+        <input type="text" name="tableName" required />
+    </div>
+
+    <div>
+        <label>Columns (e.g. Id INT PRIMARY KEY, Name NVARCHAR(50)):</label>
+        <input type="text" name="columns" required />
+    </div>
+
+    <div>
+        <label>Upload Table Photo:</label>
+        <input type="file" name="imageFile" accept="image/*" />
+    </div>
+
+    <div>
+        <button type="submit">Create Table</button>
+    </div>
+
+    <div>
+        @Html.Raw(ViewBag.Message)
+    </div>
+=======
+﻿@model WebApplication8.Models.TableCreateModel
+
+@{
+    ViewBag.Title = "Create Table";
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 }
 
 <h2>Create Table</h2>
 
+<<<<<<< HEAD
 @using (Html.BeginForm())
 {
     <div>
@@ -25,4 +59,24 @@
 @if (ViewBag.Message != null)
 {
     <div>@ViewBag.Message</div>
+=======
+@using (Html.BeginForm("CreateTable", "Table", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TableName)
+        @Html.TextBoxFor(m => m.TableName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TableName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ImageFile, "Table Image")
+        <input type="file" name="ImageFile" class="form-control" />
+        @Html.ValidationMessageFor(m => m.ImageFile)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Table</button>
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 }

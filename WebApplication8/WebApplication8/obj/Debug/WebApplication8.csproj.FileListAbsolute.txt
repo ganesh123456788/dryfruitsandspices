@@ -77,6 +77,34 @@ C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplicat
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 C:\Users\DELL\source\repos\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -156,6 +184,28 @@ F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.csproj.CoreCompileI
 F:\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\New folder\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -255,6 +305,25 @@ F:\WebApplication8\WebApplication8\bin\System.Buffers.xml
 F:\WebApplication8\WebApplication8\bin\System.Memory.xml
 F:\WebApplication8\WebApplication8\bin\System.Numerics.Vectors.xml
 F:\WebApplication8\WebApplication8\bin\System.Runtime.CompilerServices.Unsafe.xml
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\GIT Push\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\GIT Push\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\GIT Push\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -344,6 +413,22 @@ F:\GIT Push\WebApplication8\WebApplication8\obj\Debug\WebApplication8.csproj.Cor
 F:\GIT Push\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\GIT Push\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\GIT Push\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\GIT Push\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\GIT Push\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\GIT Push\New folder\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -433,6 +518,19 @@ F:\GIT Push\New folder\WebApplication8\WebApplication8\obj\Debug\WebApplication8
 F:\GIT Push\New folder\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\GIT Push\New folder\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\GIT Push\New folder\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\GIT Push\WebApplication8\WebApplication8\bin\NLog.dll
 F:\GIT Push\WebApplication8\WebApplication8\bin\NLog.xml
 F:\GIT Push\New folder\New folder\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
@@ -526,6 +624,16 @@ F:\GIT Push\New folder\New folder\WebApplication8\WebApplication8\obj\Debug\WebA
 F:\GIT Push\New folder\New folder\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\GIT Push\New folder\New folder\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\GIT Push\New folder\New folder\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -617,6 +725,10 @@ F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\obj\Debug\
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\GIT Push\New folder\New folder (2)\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\bin\WebApplication8.dll.config
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\bin\WebApplication8.dll
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\bin\WebApplication8.pdb
@@ -708,3 +820,28 @@ F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\obj\Debug\
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\obj\Debug\WebAppli.328F4B1C.Up2Date
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\obj\Debug\WebApplication8.dll
 F:\GIT Push\New folder\New folder (3)\WebApplication8\WebApplication8\obj\Debug\WebApplication8.pdb
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+F:\GIT Push\New folder\WebApplication8\WebApplication8\bin\NLog.dll
+F:\GIT Push\New folder\WebApplication8\WebApplication8\bin\NLog.xml
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2076780dd80dabc538a33d0763eba211cbe6ceda
+>>>>>>> 5bfdbb7c33369a6dfcae0d4a6ae1073f7099e026
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849

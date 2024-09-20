@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -6,10 +28,62 @@ using System.Net.Mail;
 using System.Web.Mvc;
 using WebApplication8.Models;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+﻿// Controllers/AccountController.cs
+using WebApplication8.Models;
+using System;
+using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
+using System.Web.Mvc;
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
 namespace WebApplication8.Controllers
 {
     public class AccountController : Controller
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         private static string randomCode;
         private static DateTime otpGenerationTime;
         public static string to;
@@ -147,6 +221,113 @@ namespace WebApplication8.Controllers
                 System.Diagnostics.Debug.WriteLine("Error sending email: " + ex.Message);
                 return false;
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+        public ActionResult Login()
+        {
+            return View(new LoginViewModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                using (SqlConnection conn = new SqlConnection("Data Source=DESKTOP-5M6SBGL;Initial Catalog=UserDatabase;Integrated Security=True"))
+                {
+                    conn.Open();
+                    string query = "SELECT PasswordHash FROM Users WHERE Email = @Email";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Email", model.Email);
+
+                    var passwordHash = (string)cmd.ExecuteScalar();
+
+                    if (passwordHash != null && VerifyPasswordHash(model.Password, passwordHash))
+                    {
+                        // Successful login
+                        return RedirectToAction("ddryfruitsandspices", "Home");
+                    }
+                }
+
+                ModelState.AddModelError("", "Invalid login attempt.");
+            }
+
+            return View(model);
+        }
+
+        public ActionResult Register()
+        {
+            return View(new User());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Register(User model)
+        {
+            if (ModelState.IsValid)
+            {
+                using (SqlConnection conn = new SqlConnection("Data Source=DESKTOP-5M6SBGL;Initial Catalog=UserDatabase;Integrated Security=True"))
+                {
+                    conn.Open();
+                    string query = "INSERT INTO Users (FullName, Email, PasswordHash, DateOfBirth, Gender) VALUES (@FullName, @Email, @PasswordHash, @DateOfBirth, @Gender)";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@FullName", model.FullName);
+                    cmd.Parameters.AddWithValue("@Email", model.Email);
+                    cmd.Parameters.AddWithValue("@PasswordHash", HashPassword(model.Password));
+                    cmd.Parameters.AddWithValue("@DateOfBirth", model.DateOfBirth);
+                    cmd.Parameters.AddWithValue("@Gender", model.Gender);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(model);
+        }
+
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
+        private bool VerifyPasswordHash(string password, string storedHash)
+        {
+            string hashOfInput = HashPassword(password);
+            StringComparer comparer = StringComparer.OrdinalIgnoreCase;
+            return comparer.Compare(hashOfInput, storedHash) == 0;
+>>>>>>> 8ba5cf9f26c3da9b84a089ecd20bdeb7ccfa61f1
+>>>>>>> 54d77b7c45c4b7ef1f01ba38718b00b0a2655a7e
+>>>>>>> 7e3f928faabd10c9f152b7c1de955ce83682f9a1
+>>>>>>> 901688282898ff11154d4a648ba17e842570c831
+>>>>>>> 269e04670fc86126a2f86c6e82c9c95d19c9c894
+>>>>>>> 021045f318c5c29aec4347f6ce09adbc8b00f79b
+>>>>>>> 08f4c18630278d7eca78f7aecd599abc28350bda
+>>>>>>> b1dc5a96c2a12a21bcf2f299120505f9b24b2849
         }
     }
 }
